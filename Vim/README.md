@@ -14,7 +14,7 @@ I try to learn vim every day and post what i learn everyday
 - [ ] Tmux integration
 - [ ] Bulk comment source code
 - [ ] Autocompletion and Language Server Protocol
-- [ ] File Specific Settings
+- [ ] File Specific Settings (ftplugin )
 * - [ ] Swift
 * - [ ] Rust
 * - [ ] Dart
@@ -88,6 +88,54 @@ remap is an option that makes mappings work recursively. By default it is on and
 j will be mapped to gg. Q will also be mapped to gg, because j will be expanded for the recursive mapping. W will be mapped to j (and not to gg) because j will not be expanded for the non-recursive mapping.
 
 source: https://stackoverflow.com/questions/3776117/what-is-the-difference-between-the-remap-noremap-nnoremap-and-vnoremap-mapping
+
+## Day 2
+
+enable mouse support and not interfere with tmux scroll 
+```
+set mouse=a
+```
+syntax highlighting for swift
+```
+Plug 'keith/swift.vim'
+```
+In vim when you close the undo operation is earsed which is pretty annonying
+retain value after terminating file
+```
+set undofile
+set undodir=/tmp
+```
+want to check what are all the options in the set variable type
+```
+set variable?
+
+example:
+
+set number?
+```
+Clipboard sharing - checked in mac
+```
+set clipboard=unnamed
+```
+Better verical movement - particullary in long sentence in line 
+```
+nnoremap j gj
+nnoremap k gk
+```
+
+Move between split easily
+```
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+```
+
+relative number toogle
+```
+" set variable can be toggled by adding ! at the end
+nnoremap <leader>n :<C-u>set relativenumber!<CR>
+```
 
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)

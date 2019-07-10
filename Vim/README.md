@@ -7,12 +7,12 @@ I try to learn vim every day and post what i learn everyday
 - [x] Package Manager
 - [x] File Browser - nerd tree
 - [ ] Motions
-- [ ] Fuzzy search
+- [x] Fuzzy search
 - [ ] Auto pair brackets
 - [x] Awesome status bar
 - [x] Theme
 - [ ] Tmux integration
-- [ ] Bulk comment source code
+- [x] Bulk comment source code
 - [ ] Autocompletion and Language Server Protocol
 - [ ] File Specific Settings (ftplugin )
 * - [ ] Swift
@@ -135,6 +135,65 @@ relative number toogle
 ```
 " set variable can be toggled by adding ! at the end
 nnoremap <leader>n :<C-u>set relativenumber!<CR>
+```
+
+## Day 3
+
+Plugins
+```
+" show file changes near the line number
+Plug 'airblade/vim-gitgutter'
+
+" grep the data
+Plug 'mileszs/ack.vim'
+
+" Fuzzy finder
+Plug 'junegunn/fzf'
+
+" rust syntax highlighting 
+" below command will load it when we open the rust file
+Plug 'rust-lang/rust.vim', {'for': 'rust' }
+```
+
+learned few nerdTree options which can open the file from it and expand and close the file tree.
+learned about vim folding 
+
+Display hidden characters tab and End of Line
+```
+set list
+set listchars=tab:▸\ ,eol:¬
+```
+
+Tab options which makes formatting pretty
+```
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set expandtab
+set smarttab
+```
+ack plugin options configuring ripgrep
+```
+if executable('rg')
+    let g:ackprg='/usr/local/bin/rg --vimgrep'
+    nnoremap <leader>r :Ack!
+endif
+```
+
+Fuzzy finder mapping with vim
+```
+if executable('fzf')
+    nnoremap <C-p> :FZF<cr>
+endif
+```
+Quickly insert a timestamp 
+```
+nnoremap tt "=strftime("%F %T%z")<CR>p
+```
+
+search case insentive
+```
+/\v<search term>
 ```
 
 # Reference

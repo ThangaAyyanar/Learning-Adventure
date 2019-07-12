@@ -217,6 +217,66 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 ```
 
+## Day 5
+
+Language Server Protocol configuration and Autocompletion
+
+**LSP reference:**
+* https://langserver.org/
+* https://microsoft.github.io/language-server-protocol/implementors/tools/
+
+```
+" provides the autocompletion feature
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+" LSP client for vim
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+```
+
+deoplete configuration
+```
+let g:deoplete#enable_at_startup = 1
+```
+
+Configuration of rust LSP with Language client neovim and mappings
+```
+let g:LanguageClient_serverCommands = {
+    \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+    \ }
+
+" TODO: Need to change the mappings
+
+nnoremap <leader>c :call LanguageClient_contextMenu()<CR>
+" Or map each action separately
+nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+```
+
+There are many ways to open a new buffer with no name, the simplest of which is *:new*.
+
+* *:new* will create a split window with an unnamed buffer.
+* *:enew* will open one in the current window.
+* *:vnew* will open one in a vertically split window.
+* *:tabnew* will open one in a new tab.
+
+source: https://stackoverflow.com/questions/4478111/vim-how-do-you-open-another-no-name-buffer-like-the-one-on-startup
+
+Force syntax coloring
+```
+:set syntax=php
+```
+
+Replace character/String with new line
+```
+:s/,/,^M/g
+```
+To get the **^M** character, type *Control-v* and hit *Enter*. Under Windows, do *Control-q, Enter*. The only way I can remember these is by remembering how little sense they make:
+
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

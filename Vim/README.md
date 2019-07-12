@@ -191,9 +191,30 @@ Quickly insert a timestamp
 nnoremap tt "=strftime("%F %T%z")<CR>p
 ```
 
-search case insentive
+## Day 4
+
+changed the time stamp format
 ```
-/\v<search term>
+nnoremap tt "=strftime("%d %b %Y %X")<CR>p
+```
+Git Gutter sign column
+```
+set signcolumn=yes
+```
+
+column limit
+```
+set textwidth=80
+set colorcolumn=80
+```
+
+Git command integrations
+```
+" git basic commands
+Plug 'tpope/vim-fugitive'
+
+" git shows the selected line in the browser
+Plug 'tpope/vim-rhubarb'
 ```
 
 # Reference

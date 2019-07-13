@@ -6,7 +6,7 @@ I try to learn vim every day and post what i learn everyday
 
 - [x] Package Manager
 - [x] File Browser - nerd tree
-- [ ] Motions
+- [ ] Tagbar
 - [x] Fuzzy search
 - [ ] Auto pair brackets
 - [x] Awesome status bar
@@ -14,6 +14,8 @@ I try to learn vim every day and post what i learn everyday
 - [ ] Tmux integration
 - [x] Bulk comment source code
 - [ ] Autocompletion and Language Server Protocol
+* - [x] Swift
+* - [ ] Rust
 - [ ] File Specific Settings (ftplugin )
 * - [ ] Swift
 * - [ ] Rust
@@ -276,6 +278,34 @@ Replace character/String with new line
 ```
 To get the **^M** character, type *Control-v* and hit *Enter*. Under Windows, do *Control-q, Enter*. The only way I can remember these is by remembering how little sense they make:
 
+## Day 6
+
+Plugins
+```
+" Highlight yank
+Plug 'machakann/vim-highlightedyank'
+
+" Font icons for plugin  -> WORK IN PROGRESS
+Plug 'ryanoasis/vim-devicons'
+
+" start up screen for vim
+Plug 'mhinz/vim-startify'
+```
+
+Highlight yank/copied text plugin configuration
+```
+highlight HighlightedyankRegion cterm=reverse gui=reverse
+```
+Options for spliting window directions
+```
+set splitbelow
+set splitright
+```
+use <++> as placeholder for inserting new text - from luke smith vimrc file
+```
+inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
+nnoremap <leader><leader> <Esc>/<++><Enter>"_c4l
+```
 
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)

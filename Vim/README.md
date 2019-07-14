@@ -307,6 +307,52 @@ inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
 nnoremap <leader><leader> <Esc>/<++><Enter>"_c4l
 ```
 
+## Day 7
+
+Get data from help documents
+```
+:help user-manual
+:help index
+
+" search the text in the help documents
+:helpgrep <text to search>
+" move to next result and prev through the help documents which is found by help grep
+:cnext 
+:cprev
+```
+
+Basic movements
+
+```
+i -> insert before the cursor
+a -> insert after the cursor
+
+I -> insert at the starting of the sentance
+A -> Insert at the end of the sentance
+
+r -> replace the current character
+R -> replace the text from the current character
+
+c -> { TODO }
+C -> deletes the text after the cursor and spawn the insert mode
+
+s -> subtitute current word (insert mode)
+S -> subtitute the whole sentance
+
+H -> move to top of the buffer ( not file)
+L -> move to lower end of the buffer ( not file)
+M -> move to middle end of the buffer ( not file)
+```
+
+Folding
+```
+" fold based on identation
+set foldmehtod=indent
+
+zc -> fold close
+zo -> fold open
+```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

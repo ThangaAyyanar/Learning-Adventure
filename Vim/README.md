@@ -14,8 +14,8 @@ I try to learn vim every day and post what i learn everyday
 - [ ] Tmux integration
 - [x] Bulk comment source code
 - [ ] Autocompletion and Language Server Protocol
-* - [x] Swift
-* - [ ] Rust
+* - [ ] Swift
+* - [x] Rust
 - [ ] File Specific Settings (ftplugin )
 * - [ ] Swift
 * - [ ] Rust
@@ -285,7 +285,7 @@ Plugins
 " Highlight yank
 Plug 'machakann/vim-highlightedyank'
 
-" Font icons for plugin  -> WORK IN PROGRESS
+" Font icons for plugin  
 Plug 'ryanoasis/vim-devicons'
 
 " start up screen for vim

@@ -352,6 +352,55 @@ set foldmehtod=indent
 zc -> fold close
 zo -> fold open
 ```
+## Day 8
+
+Basic Commands
+```
+) -> move to next sentance
+( -> move to previous sentance
+} -> move to next paragraph
+{ -> move to previous paragraph
+
+ctrl+o -> jump to previous location
+ctrl+i -> jump forward to next location again
+
+~ -> convert uppercase to lowercase and viceversa
+
+ctrl+] -> follow the link in manual ( ctrl+o to come back ).
+
+:cd -> change directory
+:earlier 4m -> revert back the file to 4 minute earlier
+
+/ -> to search in normal mode and 'n' to move next occurance & N to previous
+occurance
+```
+
+Marker: It is helpful to jump back and forth the location in vim
+```
+ma -> create a mark for letter 'a'
+`a -> to jump to that mark
+```
+we can able to create [a-zA-Z] totally 52 marker for a file
+
+Placeholder which can be later replaced by text
+This trick is learned from Luke Smith
+
+```
+inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
+nnoremap <leader><leader> <Esc>/<++><Enter>"_c4l
+```
+
+Diff two different buffer using
+
+```
+" this will diff the two buffer
+:windo diffthis
+
+" to exit from diff
+:windo diffoff
+```
+
+Installed tag bar plugin and ctags.
 
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)

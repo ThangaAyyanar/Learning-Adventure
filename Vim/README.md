@@ -402,6 +402,37 @@ Diff two different buffer using
 
 Installed tag bar plugin and ctags.
 
+## Day 9
+
+Splits
+```
+:sp filename 	Open filename in horizontal split
+:vsp filename 	Open filename in vertical split
+
+" make the split maximize and minimize using the key bindings
+nnoremap <C-W>M <C-W>\| <C-W>_
+nnoremap <C-W>m <C-W>=
+
+" Not done in my vim 
+```
+
+move splits into tabs
+```
+:tabedit %
+```
+
+Check what are the plugins loaded
+```
+" where was an option set  
+:scriptnames            : list all plugins, _vimrcs loaded (super)  
+:verbose set history?   : reveals value of history and where set  
+:function               : list functions  
+:func SearchCompl       : List particular function
+:set runtimepath?       : lists the path of all plugins loaded when a file is opened with Vim.
+```
+
+checked about soure kit lsp for swift 
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

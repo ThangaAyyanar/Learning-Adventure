@@ -6,7 +6,7 @@ I try to learn vim every day and post what i learn everyday
 
 - [x] Package Manager
 - [x] File Browser - nerd tree
-- [ ] Tagbar
+- [x] Tagbar
 - [x] Fuzzy search
 - [ ] Auto pair brackets
 - [x] Awesome status bar
@@ -432,6 +432,15 @@ Check what are the plugins loaded
 ```
 
 checked about soure kit lsp for swift 
+
+## Day 10 
+
+Just configured few things to make **tagbar**.
+
+auto pair plugin ( automatically close brackets )
+```
+Plug 'jiangmiao/auto-pairs'
+```
 
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)

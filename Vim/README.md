@@ -8,7 +8,7 @@ I try to learn vim every day and post what i learn everyday
 - [x] File Browser - nerd tree
 - [x] Tagbar
 - [x] Fuzzy search
-- [ ] Auto pair brackets
+- [x] Auto pair brackets
 - [x] Awesome status bar
 - [x] Theme
 - [ ] Tmux integration
@@ -442,6 +442,25 @@ auto pair plugin ( automatically close brackets )
 Plug 'jiangmiao/auto-pairs'
 ```
 
+## Day 11
+
+c$ : change from current position
+<ctrl+w><ctrl+w> : move to next window
+
+In visual mode
+select text and press **u** for small letter
+or **U** for capital letter
+```
+:?<word> will search the word backward
+    
+:!<command> to execute shell commands inside vim
+
+:'<,'>w <Filename> save the selected line as seperated file 
+    
+:r <filename> to retrieve the filename
+    
+:r !ls to retrive the command output
+```
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

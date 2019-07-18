@@ -444,13 +444,13 @@ Plug 'jiangmiao/auto-pairs'
 
 ## Day 11
 
-c$ : change from current position
-<ctrl+w><ctrl+w> : move to next window
-
 In visual mode
 select text and press **u** for small letter
 or **U** for capital letter
 ```
+c$ : change from current position
+<ctrl+w><ctrl+w> : move to next window
+
 :?<word> will search the word backward
     
 :!<command> to execute shell commands inside vim

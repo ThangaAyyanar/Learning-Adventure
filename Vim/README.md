@@ -464,6 +464,7 @@ c$ : change from current position
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)
+* Book: [Vim learn the hard way](http://learnvimscriptthehardway.stevelosh.com/)
 
 # Youtube Videos
 * [NeoVim + LSP setup from scratch](https://www.youtube.com/watch?v=ZrySdB6pUCA)

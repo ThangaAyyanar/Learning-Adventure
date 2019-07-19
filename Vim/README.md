@@ -11,7 +11,7 @@ I try to learn vim every day and post what i learn everyday
 - [x] Auto pair brackets
 - [x] Awesome status bar
 - [x] Theme
-- [ ] Tmux integration
+- [x] Tmux integration
 - [x] Bulk comment source code
 - [ ] Autocompletion and Language Server Protocol
 * - [ ] Swift
@@ -461,10 +461,29 @@ c$ : change from current position
     
 :r !ls to retrive the command output
 ```
+
+## Day 12
+
+Plugin installed
+```
+Plug 'christoomey/vim-tmux-navigator'
+```
+
+**Interacting with tmux**
+
+Use these settings in conjuction with `christoomey/vim-tmux-navigator` in .tmux.conf
+
+```
+bind -n C-h run "(tmux display-message -p '#{pane_current_command}' | grep -iq vim && tmux send-keys C-h) || tmux select-pane -L"
+bind -n C-j run "(tmux display-message -p '#{pane_current_command}' | grep -iq vim && tmux send-keys C-j) || tmux select-pane -D"
+bind -n C-k run "(tmux display-message -p '#{pane_current_command}' | grep -iq vim && tmux send-keys C-k) || tmux select-pane -U"
+bind -n C-l run "(tmux display-message -p '#{pane_current_command}' | grep -iq vim && tmux send-keys C-l) || tmux select-pane -R"
+bind -n C-\ run "(tmux display-message -p '#{pane_current_command}' | grep -iq vim && tmux send-keys 'C-\\') || tmux select-pane -l"
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)
-* Book: [Vim learn the hard way](http://learnvimscriptthehardway.stevelosh.com/)
+* Book: [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
 
 # Youtube Videos
 * [NeoVim + LSP setup from scratch](https://www.youtube.com/watch?v=ZrySdB6pUCA)

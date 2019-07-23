@@ -479,6 +479,32 @@ bind -n C-j run "(tmux display-message -p '#{pane_current_command}' | grep -iq v
 bind -n C-k run "(tmux display-message -p '#{pane_current_command}' | grep -iq vim && tmux send-keys C-k) || tmux select-pane -U"
 bind -n C-l run "(tmux display-message -p '#{pane_current_command}' | grep -iq vim && tmux send-keys C-l) || tmux select-pane -R"
 bind -n C-\ run "(tmux display-message -p '#{pane_current_command}' | grep -iq vim && tmux send-keys 'C-\\') || tmux select-pane -l"
+```
+## Day 13
+
+Vim magic formula
+```
+[count][operator][text object/motion]
+```
+Example:
+```
+6+ -> 6x go to down to line start
+gUaW -> capitalize the word
+3ce -> 3x change to word end
+4$ -> 4x go to end of life
+d]m -> delete to start of next method
+% -> jump to match of next paren or bracket
+```
+
+Operators
+```
+~ -> swap case
+gu -> make lowercase
+gU -> make uppercase
+< -> shift left
+> -> shift right
+= -> ident
+```
 
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)

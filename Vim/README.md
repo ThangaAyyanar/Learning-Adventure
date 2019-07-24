@@ -498,12 +498,47 @@ d]m -> delete to start of next method
 
 Operators
 ```
+c -> change
+d -> delete
+y -> yank
 ~ -> swap case
 gu -> make lowercase
 gU -> make uppercase
 < -> shift left
 > -> shift right
 = -> ident
+```
+
+## Day 14
+
+these are taken from 2nd youtube video presentation slides
+
+Text objects (sample)
+```
+aw -> a word
+iw -> inner word
+aW -> a WORD
+iW -> inner WORD
+ap -> a paragraph
+ip -> inner paragraph
+ab -> a bracket
+ib -> inner bracket
+at -> a tag block
+it -> inner tag block
+```
+
+Motions (sample)
+```
+% -> go first matching paren/bracket
+[count] + -> down to first non block char of line
+[count] $ -> end of the line
+[count] f/F{char} -> to next occurance of char
+[count] t/T{char} -> to before next occurance of char
+[count] g/h/j/k -> move count direction
+[count] ]m  -> go to begining of the method
+[count] w/W -> go a word/ WORD to right
+[count] b/B -> go a word/ WORD to left
+[count] e/E -> go to end of word/ WORD to right
 ```
 
 # Reference
@@ -514,3 +549,4 @@ gU -> make uppercase
 # Youtube Videos
 * [NeoVim + LSP setup from scratch](https://www.youtube.com/watch?v=ZrySdB6pUCA)
 * [Talk on going mouseless with Vim, Tmux, and Hotkeys](https://www.youtube.com/watch?v=E-ZbrtoSuzw)
+* [vim + tmux - OMG!Code](https://www.youtube.com/watch?v=5r6yzFEXajQ)

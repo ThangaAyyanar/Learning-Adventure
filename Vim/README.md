@@ -541,6 +541,22 @@ Motions (sample)
 [count] e/E -> go to end of word/ WORD to right
 ```
 
+## Day 15
+
+print message in the command
+```
+:echo "Hello world vim"
+```
+print message in the command and persist
+```
+:echom "Hello world vim persistant"
+
+" view the message using 
+:messages
+```
+
+useful when debugging the vim script
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

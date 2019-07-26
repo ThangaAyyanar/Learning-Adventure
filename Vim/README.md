@@ -557,6 +557,29 @@ print message in the command and persist
 
 useful when debugging the vim script
 
+## Day 16
+
+Mapping
+```
+:map <key> <operation>
+it will map for all modes
+
+:nmap - normal map
+:imap - insert map
+:vmap - visual map
+```
+Example
+```
+i want to delete whole line in insert mode
+:imap <c-d> <esc>ddi
+
+escape from insert mode and delete the line and get back into the insert mode
+
+:imap <c-u> <esc>VUi
+
+this will capitalize the sentence in insert mode ( Exercise in learn vim the hard way )
+```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

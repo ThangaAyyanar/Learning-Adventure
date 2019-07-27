@@ -580,6 +580,21 @@ escape from insert mode and delete the line and get back into the insert mode
 this will capitalize the sentence in insert mode ( Exercise in learn vim the hard way )
 ```
 
+## Day 17
+
+leader keys
+```
+let mapleader = "-"
+" use it like <leader>
+
+:let maplocalleader = "\\"
+"use it like <localleader>
+```
+abbrevation
+```
+:iabbrev adn and
+```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

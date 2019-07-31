@@ -595,6 +595,16 @@ abbrevation
 :iabbrev adn and
 ```
 
+## Day 18
+
+vim auto completion mode using 
+**ctrl + x**
+
+then pressing further option can 
+able to complete word based on ctags, spell check
+or
+complete whole sentence
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

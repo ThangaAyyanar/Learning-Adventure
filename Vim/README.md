@@ -614,3 +614,4 @@ complete whole sentence
 * [NeoVim + LSP setup from scratch](https://www.youtube.com/watch?v=ZrySdB6pUCA)
 * [Talk on going mouseless with Vim, Tmux, and Hotkeys](https://www.youtube.com/watch?v=E-ZbrtoSuzw)
 * [vim + tmux - OMG!Code](https://www.youtube.com/watch?v=5r6yzFEXajQ)
+* [Let vim do the typing](https://www.youtube.com/watch?v=3TX3kV3TICU)

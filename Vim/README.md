@@ -605,6 +605,54 @@ able to complete word based on ctags, spell check
 or
 complete whole sentence
 
+## Day 19
+
+Move through file faster
+```
+ctrl + u => Up
+ctrl + d => down
+```
+
+move the editor screen by one line
+```
+ctrl+e - move down
+ctrl+y - move up
+```
+
+move through file like pages
+```
+ctrl + f => forward to next page
+ctrl + b => backward to previous page
+```
+
+Move to the line number
+```
+<Number>gg
+```
+
+change editor screen showing the current line
+```
+zt - make line display in top
+zb - make line display in bottom
+zz - make line display in center
+```
+
+inline navigation
+
+```
+0 - start of the line
+$ - end of the line
+^ - start of char
+g_ - end of char
+```
+
+search the current word in file
+
+```
+* - search the current word and move to next occurance
+# - search the current word and move to previous occurance
+```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

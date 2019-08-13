@@ -653,6 +653,32 @@ search the current word in file
 # - search the current word and move to previous occurance
 ```
 
+## Day 20
+
+autocommands
+
+```
+:autocmd BufNewFile * :write
+         ^          ^ ^
+         |          | |
+         |          | The command to run.
+         |          |
+         |          A "pattern" to filter the event.
+         |
+         The "event" to watch for.
+ 
+ 
+ Example::
+ -------
+ 
+Vim creates files as soon as you edit them. Run the following command:
+
+:autocmd BufNewFile * :write
+
+:autocmd FileType python     nnoremap <buffer> <localleader>c I#<esc>
+
+```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

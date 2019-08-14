@@ -679,6 +679,22 @@ Vim creates files as soon as you edit them. Run the following command:
 
 ```
 
+## Day 21
+
+Operator-Pending Mappings
+```
+" operator mapping p to i(
+:onoremap p i(
+```
+hello(world)
+
+in above sentance place cursor in world and press 'dp' it will delete all the word inside brackets.
+
+```
+:onoremap b /return<cr>
+" similar to above but select until return. and do the respective operation (d-delete,c-change,y-yank)
+```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

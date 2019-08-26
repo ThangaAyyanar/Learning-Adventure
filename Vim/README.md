@@ -695,6 +695,26 @@ in above sentance place cursor in world and press 'dp' it will delete all the wo
 " similar to above but select until return. and do the respective operation (d-delete,c-change,y-yank)
 ```
 
+## Day 22 - Multiple line editing using two methods
+
+source: https://stackoverflow.com/questions/11784408/vim-multiline-editing-like-in-sublimetext
+
+* visual block
+    - press ctrl+v and select the required lines.
+    - press 'I' and type text you want.
+    - press 'ESC' to affect all the lines.
+
+* global command
+```
+:g/Hello/d
+```
+delete line which contains hello
+
+```
+:g/Hello/norm dw
+```
+delete the first word of every line contains hello
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

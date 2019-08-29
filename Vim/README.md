@@ -13,6 +13,7 @@ I try to learn vim every day and post what i learn everyday
 - [x] Theme
 - [x] Tmux integration
 - [x] Bulk comment source code
+- [X] Goyo integration
 - [ ] Autocompletion and Language Server Protocol
 * - [ ] Swift
 * - [x] Rust
@@ -714,6 +715,33 @@ delete line which contains hello
 :g/Hello/norm dw
 ```
 delete the first word of every line contains hello
+
+## Day 23 - Goyo Integration
+
+Plug package
+```
+Plug 'junegunn/goyo.vim'
+```
+
+enter and exit from goyo using the following command
+```
+:Goyo
+```
+
+goyo configuration (lot of plugins are disabled inside goyo to enable it we use the following)
+```
+function! s:goyo_enter()
+    colorscheme molokai
+endfunction
+
+"function! s:goyo_leave()
+    "colorscheme molokai
+"endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+"autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+```
 
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)

@@ -743,6 +743,37 @@ autocmd! User GoyoEnter nested call <SID>goyo_enter()
 
 ```
 
+## Day 24 - Buffers,Tweaking and fugitive
+
+source: https://hashrocket.com/blog/posts/understanding-the-buffer-list-in-vim-part-1
+
+```
+:ls - list all the buffers
+:bnext - move to next buffer
+:bprev - move to previous buffer
+:badd - add new buffer
+:bdelete - delete buffer
+:buffer <TAB> - navigate to the buffer
+:only - view the buffer in full page
+
+:sbfirst - open first buffer in new window
+```
+
+start vim without plugins
+```
+vim -u NONE fileyouwantopen
+```
+
+check the startup time and debug in neo vim
+```
+nvim --startuptime <Filename_to_save_output>
+```
+
+learned few things about fugitive
+```
+https://gist.github.com/mikaelz/38600d22b716b39b031165cd6d201a67
+```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

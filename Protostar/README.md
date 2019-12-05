@@ -36,5 +36,8 @@
 
 # Reference
 - https://old.liveoverflow.com/binary_hacking/protostar/index.html
-- https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN
 - https://exploit.education/protostar/
+
+# Writeup & Video
+- https://kevinalmansa.github.io/write-ups/Protostar-Stack-Write-up/
+- https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN

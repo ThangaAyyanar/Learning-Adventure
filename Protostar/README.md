@@ -1,12 +1,12 @@
 # Protostar
 
 ## Stack
-- [ ] stack0
-- [ ] stack1
-- [ ] stack2
-- [ ] stack3
-- [ ] stack4
-- [ ] stack5
+- [x] stack0
+- [x] stack1
+- [x] stack2
+- [x] stack3
+- [x] stack4
+- [x] stack5
 - [ ] stack6
 - [ ] stack7
 

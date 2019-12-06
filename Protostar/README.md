@@ -7,7 +7,7 @@
 - [x] stack3
 - [x] stack4
 - [x] stack5
-- [ ] stack6
+- [x] stack6
 - [ ] stack7
 
 ## Format String

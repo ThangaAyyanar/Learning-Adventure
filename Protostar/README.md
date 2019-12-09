@@ -47,7 +47,13 @@ print padding + return_op + call_system + after_system_execution + bin_sh_path
 # Reference
 - https://old.liveoverflow.com/binary_hacking/protostar/index.html
 - https://exploit.education/protostar/
+- https://ctf101.org/binary-exploitation/overview/
 
 # Writeup & Video
 - https://kevinalmansa.github.io/write-ups/Protostar-Stack-Write-up/
 - https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN
+- https://failingsilently.wordpress.com/exploit-development/
+
+# Tools
+- https://github.com/inaz2/roputils
+- https://github.com/JonathanSalwan/ROPgadget

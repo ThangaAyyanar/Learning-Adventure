@@ -15,7 +15,10 @@
 - [ ] pyRev
 - [ ] CC
 - [ ] sharp
-- [ ] Python_revN
+- [x] Python_revN
+```
+  write up available in [1].
+ ```
 - [ ] pyRev 2
 - [ ] REcruitment
 - [ ] leve3l
@@ -38,9 +41,15 @@
 ## Forensics
 - [ ] Chordis
 - [ ] Chunky
-- [ ] Easy Peasy
+- [x] Easy Peasy
+```
+   write up available in [1].
+```
 - [ ] Oculto
-- [ ] PINGer
+- [x] PINGer
+```
+  pwnl0rd solved it i attach the code. The data are in icmp packet used scapy to extract and used it to find the flag
+ ```
 - [ ] UERGIENyYWNr
 - [ ] Elrejt
 - [ ] I Fake You 3000
@@ -58,8 +67,7 @@
 - [ ] Smalli_inject
 - [ ] Secrets
 
-
 ---
 
 ## Resources
-- https://goldayan.netlify.com
+1) https://goldayan.netlify.com

@@ -36,8 +36,6 @@
 - [ ] Hold_Ur_Rope
 - [ ] Hold the ROP
 
-
-
 ## Forensics
 - [ ] Chordis
 - [ ] Chunky
@@ -58,7 +56,15 @@
 ## Crypto
 
 - [ ] Eyeless
-- [ ] Baby Crypto 1
+```
+solution: long_to_bytes(sign(enc_flag*pow(2,e,n))//2). 
+this is taken from inCTF telegram channel. 
+not tried yet. 
+```
+- [x] Baby Crypto 1
+```
+  decoding script available in this repo
+```
 - [ ] BitCrypt
 - [ ] Shift-xor
 - [ ] AES-RSA

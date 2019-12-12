@@ -71,3 +71,4 @@
 
 ## Resources
 1) https://goldayan.netlify.com
+2) https://github.com/teambi0s ( old writeup and other resources )

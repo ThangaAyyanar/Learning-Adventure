@@ -21,8 +21,8 @@ print padding + return_op + call_system + after_system_execution + bin_sh_path
 ```
 
 ## Format String
-- [ ] format0
-- [ ] format1
+- [x] format0
+- [x] format1
 - [ ] format2
 - [ ] format3
 - [ ] format4
@@ -53,6 +53,7 @@ print padding + return_op + call_system + after_system_execution + bin_sh_path
 - https://kevinalmansa.github.io/write-ups/Protostar-Stack-Write-up/
 - https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN
 - https://failingsilently.wordpress.com/exploit-development/
+- https://www.ayrx.me/protostar-walkthrough-format ( format string writeup )
 
 # Tools
 - https://github.com/inaz2/roputils

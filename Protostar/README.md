@@ -44,6 +44,11 @@ print padding + return_op + call_system + after_system_execution + bin_sh_path
 - [ ] final1
 - [ ] final2
 
+## Create a Binary with no stack canary, executable stack and no PIE (Position Independent Code)
+```
+gcc <input> -o <output> -fno-stack-protector -z execstack -no-pie
+```
+
 # Reference
 - https://old.liveoverflow.com/binary_hacking/protostar/index.html
 - https://exploit.education/protostar/

@@ -49,6 +49,12 @@ print padding + return_op + call_system + after_system_execution + bin_sh_path
 gcc <input> -o <output> -fno-stack-protector -z execstack -no-pie
 ```
 
+## Using socat on binary file
+attaching binary to the port
+```
+socat TCP-LISTEN:1337,nodelay,reuseaddr,fork EXEC:"stdbuf -i0 -o0 -e0 ./<Program name>"
+```
+
 # Reference
 - https://old.liveoverflow.com/binary_hacking/protostar/index.html
 - https://exploit.education/protostar/

@@ -133,3 +133,11 @@
 - [ ] where are the robots, status: down
 - [ ] Java Script Kiddie
 - [ ] Java Script Kiddie 2
+
+
+### Resources
+#### Gynvael picoCTF streams
+- https://www.youtube.com/watch?v=pYrGJuOUG7M
+- https://www.youtube.com/watch?v=gHlundcY9GA
+- https://www.youtube.com/watch?v=3x4nzymm33Q
+- https://www.youtube.com/watch?v=gEPd1ref9s0

@@ -23,7 +23,10 @@ print padding + return_op + call_system + after_system_execution + bin_sh_path
 ## Format String
 - [x] format0
 - [x] format1
-- [ ] format2
+- [x] format2
+```
+%n4u (replace 4 with additional data you want for %n )
+```
 - [ ] format3
 - [ ] format4
 

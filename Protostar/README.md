@@ -31,8 +31,8 @@ print padding + return_op + call_system + after_system_execution + bin_sh_path
 - [x] format4
 
 ## Heap
-- [ ] heap0
-- [ ] heap1
+- [x] heap0
+- [x] heap1
 - [ ] heap2
 - [ ] heap3
 

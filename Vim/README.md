@@ -14,13 +14,10 @@ I try to learn vim every day and post what i learn everyday
 - [x] Tmux integration
 - [x] Bulk comment source code
 - [X] Goyo integration
+- [x] multiple cursor
 - [ ] Autocompletion and Language Server Protocol
 * - [ ] Swift
 * - [x] Rust
-- [ ] File Specific Settings (ftplugin )
-* - [ ] Swift
-* - [ ] Rust
-* - [ ] Dart
 
 ## Day 1
 
@@ -773,6 +770,15 @@ learned few things about fugitive
 ```
 https://gist.github.com/mikaelz/38600d22b716b39b031165cd6d201a67
 ```
+
+## Day 25: Multiple cursor
+
+Installed 
+```
+vim-multiple-cursors 
+```
+ctrl+n is the command used to edit multiple line 
+This plugin is awesome.
 
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)

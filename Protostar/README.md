@@ -40,11 +40,22 @@ print padding + return_op + call_system + after_system_execution + bin_sh_path
 ```
 exploiting use-after-free bug
 ```
-- [ ] heap3
+- [x] heap3
+```
+need to create a fake chunk and unlink it explictly
+then forward & backward pointer is abused to write change the PLT
+
+hence executing the winner function
+```
 
 ## Network
 
-- [ ] net0
+- [x] net0
+```
+echo -ne "`cat -`" | nc 127.0.0.1 2999
+
+to enter the little endian string
+```
 - [ ] net1
 - [ ] net2
 

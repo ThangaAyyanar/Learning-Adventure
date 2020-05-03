@@ -780,6 +780,24 @@ vim-multiple-cursors
 ctrl+n is the command used to edit multiple line 
 This plugin is awesome.
 
+## Day  26: Sessions && spell check
+
+spell checking in vim
+```
+set spell
+```
+create session
+```
+:mksession <SessionName>.vim
+
+#open it using
+vim -S <SessionName>.vim
+```
+Tab shortcuts
+```
+gt,gT
+```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

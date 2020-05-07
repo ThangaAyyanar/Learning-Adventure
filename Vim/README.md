@@ -798,6 +798,53 @@ Tab shortcuts
 gt,gT
 ```
 
+## Day 27: Removed deoplete and Installed COC as completion engine
+
+- Coc is **Awesome**
+
+issue faced
+```
+python jedi completion engine not worked properly so i disabled it 
+```
+I used **Microsoft Python Language Server** for python Language server
+
+Coc configuration
+```
+{
+    "python.jediEnabled": false,
+    "python.pipenvPath":"/usr/local/bin/pipenv"
+}
+
+```
+
+Added Status details in lightLine.vim
+```
+let g:lightline = {
+      \ 'colorscheme': 'one',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head',
+      \   'cocstatus': 'coc#status'
+      \ },
+      \ }
+
+```
+
+also installed
+
+Vim,Json,Swift(in progress),flutter
+
+Change FZF settings
+```
+if executable('fzf')
+    nnoremap <c-p> :FzfGFiles<cr>
+    let g:fzf_command_prefix = 'Fzf'
+endif
+```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

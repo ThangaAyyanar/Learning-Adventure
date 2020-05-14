@@ -845,6 +845,52 @@ if executable('fzf')
 endif
 ```
 
+## Day 28 - Finally found the trick to search the yanked text
+
+Run macro across multiple lines
+
+In Normal Mode:  <num of lines>@<macro name>
+In Command Mode: :<num of lines> norm @<macro name>
+```
+"ayy - Read current line into register 'a'
+"Ayy - Append the current line to register 'a' (Using capitals for register will no over write but append to the regsiter)
+"bP - Paste contents of register 'b' above current line
+"cc3w - Change three words, putting the previous three words into register 'c'
+````
+q: - opens a new split window with the last run vim column commands
+
+/Ctrl - r + 0: search for the yanked text
+
+* - search current word within the file.
+\# - search backward.
+g* - search part of the current word
+g# - search backwards
+
+search can also be combined with operator commands :)
+
+for e.g: y/function - will yank everything from the current position uptil the function text
+
+d?; - will delete everything from current position to the previous occurence of ;
+
+v/test - will select everything from the current position to the next occurence of test.
+
+c2/end - change all the text from the current cursor position upto the second occurence of end word.
+
+<Ctrl-a> if your cursor is over a number it increments that number
+<Ctrl-x> if your cursor is over a number it decrements that number
+    
+**From Primeagen**
+f<character> to move forward
+```
+; -> next
+, -> prev
+```
+    
+ mark across the file using 
+ ```
+ m+<CaptialLetter>
+ ```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)
@@ -855,3 +901,6 @@ endif
 * [Talk on going mouseless with Vim, Tmux, and Hotkeys](https://www.youtube.com/watch?v=E-ZbrtoSuzw)
 * [vim + tmux - OMG!Code](https://www.youtube.com/watch?v=5r6yzFEXajQ)
 * [Let vim do the typing](https://www.youtube.com/watch?v=3TX3kV3TICU)
+
+# Coppied by other vimrc's
+* https://raw.githubusercontent.com/tojochacko/vim/master/commands-list

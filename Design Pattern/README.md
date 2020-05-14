@@ -4,10 +4,10 @@ The challenge is to learn design patterns from [https://refactoring.guru](https:
 
 ## Creational patterns
 - [ ] Abstract factory
-- [ ] Builder
+- [x] Builder
 - [ ] Factory Method
 - [ ] Prototype
-- [ ] Singleton
+- [x] Singleton
 
 ## Structural Pattern
 - [ ] Adapter
@@ -19,7 +19,7 @@ The challenge is to learn design patterns from [https://refactoring.guru](https:
 - [ ] Proxy
 
 ## Behavioral Pattern
-- [ ] Chain of Responsibility
+- [x] Chain of Responsibility
 - [ ] Command
 - [ ] Iterator
 - [ ] Mediator

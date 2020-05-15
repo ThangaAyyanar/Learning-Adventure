@@ -56,8 +56,8 @@ echo -ne "`cat -`" | nc 127.0.0.1 2999
 
 to enter the little endian string
 ```
-- [ ] net1
-- [ ] net2
+- [x] net1
+- [x] net2
 
 ## Final
 - [ ] final0

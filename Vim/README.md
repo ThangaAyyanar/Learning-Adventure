@@ -891,6 +891,22 @@ f<character> to move forward
  m+<CaptialLetter>
  ```
 
+## Day 29 - multiple file select in FZF
+
+from : https://github.com/junegunn/fzf.vim/issues/40
+
+It's already possible:
+```
+    tab - select and move cursor down
+    shift-tab - select and move cursor up (for some reason, neovim doesn't support the key)
+    ctrl-a alt-a - select all
+    ctrl-d alt-d - deselect all
+    enter / ctrl-x / ctrl-v / ctrl-t - open selected entries (current window / horizontal splits / vertical splits / tabs)
+```
+Selected entries are added to quickfix list.
+
+
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

@@ -905,12 +905,32 @@ It's already possible:
 ```
 Selected entries are added to quickfix list.
 
+## Day 30 - Global commands
 
+Hover definition in COC
+```
+SHIFT+K -> hover defn
+```
+Easy navigation in the buffer using plugins: Easy motion or sneak ( on list need to install one )
 
+we can specify range infront of commands
+```
+.,$left -> remove whitespace infront of sentance from current line to the end
+.,.+5left -> remove from current line to current line + 5
+```
+
+global command
+```
+:g/pattern/command
+:g/^/pu=\"\n\" -> new line after every line
+:g/^\s*$/d -> delete all empty line
+:g/pattern/t$ -> copy text with pattern and paste it at end of the line
+```
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)
 * Book: [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
+* Blog: [Chris at machine](chrisatmachine.com)
 
 # Youtube Videos
 * [NeoVim + LSP setup from scratch](https://www.youtube.com/watch?v=ZrySdB6pUCA)

@@ -20,10 +20,10 @@ The challenge is to learn design patterns from [https://refactoring.guru](https:
 
 ## Behavioral Pattern
 - [x] Chain of Responsibility
-- [ ] Command
-- [ ] Iterator
-- [ ] Mediator
-- [ ] Memento
+- [x] Command
+- [x] Iterator
+- [x] Mediator
+- [x] Memento
 - [ ] Observer
 - [ ] State
 - [ ] Strategy

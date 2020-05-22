@@ -926,6 +926,21 @@ global command
 :g/^\s*$/d -> delete all empty line
 :g/pattern/t$ -> copy text with pattern and paste it at end of the line
 ```
+
+## Day 31 - Copy selected text
+
+This function will copy the matches and store it in given registers
+this code is taken from: https://vim.fandom.com/wiki/Copy_search_matches
+```
+function! CopyMatches(reg)
+  let hits = []
+  %s//\=len(add(hits, submatch(0))) ? submatch(0) : ''/gne
+  let reg = empty(a:reg) ? '+' : a:reg
+  execute 'let @'.reg.' = join(hits, "\n") . "\n"'
+endfunction
+command! -register CopyMatches call CopyMatches(<q-reg>)
+```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

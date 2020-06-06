@@ -15,8 +15,8 @@ I try to learn vim every day and post what i learn everyday
 - [x] Bulk comment source code
 - [X] Goyo integration
 - [x] multiple cursor
-- [ ] Autocompletion and Language Server Protocol
-* - [ ] Swift
+- [x] Autocompletion and Language Server Protocol
+* - [x] Swift
 * - [x] Rust
 
 ## Day 1

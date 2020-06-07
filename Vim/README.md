@@ -978,6 +978,20 @@ json formatter inside neovim using jq
 nnoremap <leader>j V:!jq<cr>:set filetype=json<cr>
 ```
 
+## Day 33 - Emoji plugin
+
+customizing gitguter using vim emoji plugin
+
+Plug 'junegunn/vim-emoji'
+
+```
+" git gutter setups
+let g:gitgutter_sign_added = emoji#for('small_blue_diamond')
+let g:gitgutter_sign_modified = emoji#for('small_orange_diamond')
+let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
+let g:gitgutter_sign_modified_removed = emoji#for('collision')
+```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

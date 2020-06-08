@@ -992,6 +992,29 @@ let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
 let g:gitgutter_sign_modified_removed = emoji#for('collision')
 ```
 
+## Day 34 - Time travel
+
+Time travel
+
+Vim can also travel to a state in the "past" and "future". The :earlier and :later commands accept time as an argument:
+```
+:earlier 5s     " go to older state 5 seconds before
+:earlier 5m     " go to older state 5 minutes before
+:earlier 5h     " go to older state 5 hours before
+:earlier 5d     " go to older state 5 days before
+:earlier 5f     " 5 saves ago
+```
+You can use same argument on :later:
+```
+:later 5s     " go to newer state 5 seconds after
+:later 5m     " go to newer state 5 minutes after
+:later 5h     " go to newer state 5 hours after
+:later 5d     " go to newer state 5 days after
+:later 3f     " 3 saves later
+```
+site: https://dev.to/iggredible/learn-how-to-use-vim-undo-to-time-travel-3l73
+
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

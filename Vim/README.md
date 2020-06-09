@@ -1014,12 +1014,33 @@ You can use same argument on :later:
 ```
 site: https://dev.to/iggredible/learn-how-to-use-vim-undo-to-time-travel-3l73
 
+## Day 35 - FZF customization
+
+user Rg to search for strings in file
+added custom keyboard shortcuts for files,rg,buffers,gitFiles and changed layout of fzf
+
+```
+if executable('fzf')
+    let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
+    let $FZF_DEFAULT_COMMAND="rg --files --hidden" 
+    nnoremap <c-p> :FzfFiles<cr>
+    nnoremap <c-f> :FzfRg<cr>
+    nnoremap <leader>b :FzfBuffers<cr>
+    nnoremap <leader>g :FzfGitFiles<cr>
+    " All commands provided by fzf will have this prefix
+    let g:fzf_command_prefix = 'Fzf'
+    " Border color
+    let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
+endif
+
+```
+refered from **chrisatmachine**
 
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)
 * Book: [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
-* Blog: [Chris at machine](chrisatmachine.com)
+* Blog: [Chris at machine](http://chrisatmachine.com)
 
 # Youtube Videos
 * [NeoVim + LSP setup from scratch](https://www.youtube.com/watch?v=ZrySdB6pUCA)

@@ -1036,6 +1036,18 @@ endif
 ```
 refered from **chrisatmachine**
 
+## Day 36 - Fugitive
+
+Learning new things in git fugitive
+
+* git add . | add all unstaged files
+* Gstatus   | show git index files (press '-' to stage and unstage files)
+  Shift+c   | in gstatus will commit the files directly
+* Gdiff     | diff the changes you have done with old version of file
+* Gedit :0  | current version of the file from old version
+
+learned from https://github.com/tpope/vim-fugitive
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

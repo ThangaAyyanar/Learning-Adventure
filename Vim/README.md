@@ -1077,6 +1077,22 @@ let g:lightline = {
 Added git gutter details to the status
 reference: https://gitlab.com/polyzen/dotfiles/blob/dce37955a745ee23efd247306781f8bc4a4d62bc/base/.vim/vimrc#L158
 
+## Day 38
+
+Create my own function TodoTaskWarrior
+ - Used to mark line in a file for todo which will straight to task warrior. 
+ - function also annotate the task with absolute filename with line number.
+```
+function TodoTaskAdd()
+    "https://coderwall.com/p/auy6fa/vim-get-current-file-path
+    let annotation = expand('%:p')
+    let task = expand("%:t")
+    let lineNumber = line(".")
+    execute '!task rc.data.location=~/TaskBase/Office add '.task.' +Todo project:Remainder'
+    execute '!task rc.data.location=~/TaskBase/Office +LATEST annotate "file:'.annotation.':'.lineNumber.'"'
+endfunction
+```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

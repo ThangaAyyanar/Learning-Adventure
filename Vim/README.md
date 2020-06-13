@@ -1092,6 +1092,43 @@ function TodoTaskAdd()
     execute '!task rc.data.location=~/TaskBase/Office +LATEST annotate "file:'.annotation.':'.lineNumber.'"'
 endfunction
 ```
+## Day 39 Installed Vim Zettel
+
+Zettel AKA slip box, is a note taking method this plugin provides this feature on top of vimwiki,
+tried out yesterday which is pretty cool 
+
+Issue i faced are there is no video tutorial or gif explaining how this plugin work so i read below two
+reference multiple times to get that i need
+```
+Plug 'michal-h21/vim-zettel', { 'for': 'markdown' }
+```
+configuration setting
+```
+let g:zettel_format = '%Y%m%d%H%M-%S'
+let g:zettel_options = [{},{"front_matter" : {"tags" : ""}, "template" :  "~/Templates/zettel.tpl"}]
+let g:zettel_fzf_command = "rg --column --line-number --ignore-case --no-heading --color=always "
+nnoremap <leader>vt :VimwikiSearchTags<space>
+nnoremap <leader>vs :VimwikiSearch<space>
+nnoremap <leader>gt :VimwikiRebuildTags!<cr>:ZettelGenerateTags<cr><c-l>
+nnoremap <leader>zl :ZettelSearch<cr>
+nnoremap <leader>zn :ZettelNew<cr><cr>:4d<cr>:w<cr>ggA
+nnoremap <leader>bl :VimwikiBacklinks<cr>
+```
+let g:vimwiki_list = [{'path': '~/Documents/My Library','syntax': 'markdown','ext': '.md'},{"path":"~/SlipBox", 'auto_tags': 1, 'auto_toc': 1,'syntax': 'markdown','ext': '.md'}]
+
+let g:zettel_options = [{},{"front_matter" : {"tags" : ""}, "template" :  "~/Templates/zettel.tpl"}]
+
+it has empty dict as first element because i use slipbox method on second wiki element and
+another thing that drive me nuts is we need to create index.md or index.wiki file in the Wiki List path otherwise
+Zettel commands doesnot appear. so keep that in mind.
+
+nnoremap <leader>gt :VimwikiRebuildTags!<cr>:ZettelGenerateTags<cr><c-l> (command is taken from reddit post)
+    
+i changed VimiWikiGenerateTags to ZettelGenerateTags, which works best 
+
+reference:
+https://www.reddit.com/r/Zettelkasten/comments/fidaum/vimzettel_an_addon_for_the_vimwiki_addon_for_vim/
+https://github.com/michal-h21/vim-zettel
 
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)

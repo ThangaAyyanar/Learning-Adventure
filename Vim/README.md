@@ -1130,6 +1130,49 @@ reference:
 https://www.reddit.com/r/Zettelkasten/comments/fidaum/vimzettel_an_addon_for_the_vimwiki_addon_for_vim/
 https://github.com/michal-h21/vim-zettel
 
+## Day 40 - CSS color plugin and LightLine (status bar) changes
+
+Css color - **Plug 'ap/vim-css-color'** highlight hex colors
+window zoom - ***Plug 'dhruvasagar/vim-zoom'** zoom window,similar to tmux pane zoom
+
+light line inacitve theme color change
+```
+autocmd VimEnter * call SetupLightlineColors()
+function SetupLightlineColors() abort
+  let l:palette = lightline#palette()
+  let l:palette.inactive.left = [["#282c34","#ff8c66",235,168,"bold"],["#abb2bf","#3e4452",145,240]]
+  call lightline#colorscheme()
+endfunction
+```
+Light line mode changes
+```
+let g:lightline = {
+      \ 'mode_map': {
+      \ 'n' : 'N',
+      \ 'i' : 'I',
+      \ 'R' : 'R',
+      \ 'v' : 'V',
+      \ 'V' : 'VL',
+      \ "\<C-v>": 'VB',
+      \ 'c' : 'C',
+      \ 's' : 'S',
+      \ 'S' : 'SL',
+      \ "\<C-s>": 'SB',
+      \ 't': 'T',
+      \ },
+      \ 'colorscheme': 'one',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'githunk','gitbranch', 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'githunk': 'LightlineGitGutter',
+      \   'gitbranch': 'fugitive#head',
+      \   'cocstatus': 'coc#status'
+      \ },
+      \ }
+```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

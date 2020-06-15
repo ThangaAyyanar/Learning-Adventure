@@ -1173,6 +1173,23 @@ let g:lightline = {
       \ }
 ```
 
+## Day 41 - changed few key bindings
+
+```
+nnoremap <space><space> :FzfBLines<cr>
+nnoremap <leader>b<space> :FzfBuffers<cr>
+```
+
+changed color for inactive mode in lightline
+```
+autocmd VimEnter * call SetupLightlineColors()
+function SetupLightlineColors() abort
+  let l:palette = lightline#palette()
+  let l:palette.inactive.left = [["#282c34","#ff8c66",235,168,"bold"],["#abb2bf","#3e4452",145,240]]
+  call lightline#colorscheme()
+endfunction
+```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

@@ -1190,6 +1190,29 @@ function SetupLightlineColors() abort
 endfunction
 ```
 
+## Day 42 - Folding
+Need to get started to use folding
+so enabled folding
+```
+set foldmethod=indent
+```
+we can enable fold column which show few details about folding level
+```
+set foldcolumn=1
+```
+Easy to navigate between source file using the following commands
+```
+zj - next fold
+zk - prev fold
+zM - fold everything
+zR - unfold everything
+```
+color for folded text
+```
+highlight Folded guifg=PeachPuff4
+highlight FoldColumn guibg=darkgrey guifg=white
+```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

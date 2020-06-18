@@ -1213,6 +1213,14 @@ highlight Folded guifg=PeachPuff4
 highlight FoldColumn guibg=darkgrey guifg=white
 ```
 
+## Day 43 
+
+We include many times we want 
+```
+d<count>i{ 
+```
+stole it from Primeagen video
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

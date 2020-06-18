@@ -3,7 +3,8 @@
 ## Lessons
 
 ### Basic Reversing
-- [ ] [Intel - x64 assembly Introduction](https://software.intel.com/content/www/us/en/develop/articles/introduction-to-x64-assembly.html)
+- [x] [Intel - x64 assembly Introduction](https://software.intel.com/content/www/us/en/develop/articles/introduction-to-x64-assembly.html)
+  - [ ] Take Notes
 - [ ] [x64 Reverse Engineering basics](https://nora.codes/tutorial/an-intro-to-x86_64-reverse-engineering/)
 - [x] [Reverse Engineering Tools comparision](https://dustri.org/b/radare2-ida-pro-and-binary-ninja-a-metaphoric-comparison.html)
 

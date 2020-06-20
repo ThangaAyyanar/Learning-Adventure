@@ -4,13 +4,14 @@
 
 ### Basic Reversing
 - [x] [Intel - x64 assembly Introduction](https://software.intel.com/content/www/us/en/develop/articles/introduction-to-x64-assembly.html)
-  - [ ] Take Notes
-- [ ] [x64 Reverse Engineering basics](https://nora.codes/tutorial/an-intro-to-x86_64-reverse-engineering/)
+  - [ ] Take Notes.
+- [x] [x64 Reverse Engineering basics](https://nora.codes/tutorial/an-intro-to-x86_64-reverse-engineering/)
+  - [ ] Need to work on Crackme3 ( assembly code differs from the blog ). Need to dig into it.
 - [x] [Reverse Engineering Tools comparision](https://dustri.org/b/radare2-ida-pro-and-binary-ninja-a-metaphoric-comparison.html)
 
 ### Reversing with radare2 (ArtikBlue's article)
 
-- [ ] [Reversing x32/x64 with radare2 - 1 (intro) ](https://artik.blue/reversing-radare2-1)
+- [x] [Reversing x32/x64 with radare2 - 1 (intro) ](https://artik.blue/reversing-radare2-1)
 - [ ] [Reversing x32/x64 with radare2 - 2 (conditionals) ](https://artik.blue/reversing-radare2-2)
 - [ ] [Reversing x32/x64 with radare2 - 3 (funcs, cases and loops)](https://artik.blue/reversing-radare-3)
 - [ ] [Reversing x32/x64 with radare2 - 4 - I ((arrays and strings))](https://artik.blue/reversing-radare-4)

@@ -17,11 +17,12 @@
 - [x] [Reversing x32/x64 with radare2 - 4 - I ((arrays and strings))](https://artik.blue/reversing-radare-4)
 
 ## Pratice Problems
-- [ ] Re-create the examples on artikBlue's posts
+- [x] Re-create the examples on artikBlue's posts
   - [x] Recreate 1 and 2 article binaries and analyze it in radare2
-  - [ ] Patching binaries (decrese the loop counter) in [Reversing x32/x64 with radare2 - 3 (funcs, cases and loops)](https://artik.blue/reversing-radare-3)
-  - [ ] r2frida automating reversing in [Reversing x32/x64 with radare2 - 4 - I ((arrays and strings))](https://artik.blue/reversing-radare-4)
-- [ ] Ioli crackme 1
+  - [x] Patching binaries (decrese the loop counter) in [Reversing x32/x64 with radare2 - 3 (funcs, cases and loops)](https://artik.blue/reversing-radare-3)
+  - [x] r2frida automating reversing in [Reversing x32/x64 with radare2 - 4 - I ((arrays and strings))](https://artik.blue/reversing-radare-4)
+  Instead of r2frida i used r2pipe to automate this.
+- [x] Ioli crackme 1
 
 ## Extra mile
 - Install radare2 on a Windows BOX 

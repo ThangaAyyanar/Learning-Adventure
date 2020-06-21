@@ -12,12 +12,13 @@
 ### Reversing with radare2 (ArtikBlue's article)
 
 - [x] [Reversing x32/x64 with radare2 - 1 (intro) ](https://artik.blue/reversing-radare2-1)
-- [ ] [Reversing x32/x64 with radare2 - 2 (conditionals) ](https://artik.blue/reversing-radare2-2)
-- [ ] [Reversing x32/x64 with radare2 - 3 (funcs, cases and loops)](https://artik.blue/reversing-radare-3)
-- [ ] [Reversing x32/x64 with radare2 - 4 - I ((arrays and strings))](https://artik.blue/reversing-radare-4)
+- [x] [Reversing x32/x64 with radare2 - 2 (conditionals) ](https://artik.blue/reversing-radare2-2)
+- [x] [Reversing x32/x64 with radare2 - 3 (funcs, cases and loops)](https://artik.blue/reversing-radare-3)
+- [x] [Reversing x32/x64 with radare2 - 4 - I ((arrays and strings))](https://artik.blue/reversing-radare-4)
 
 ## Pratice Problems
 - [ ] Re-create the examples on artikBlue's posts
+  - [x] Recreate 1 and 2 article binaries and analyze it in radare2
   - [ ] Patching binaries (decrese the loop counter) in [Reversing x32/x64 with radare2 - 3 (funcs, cases and loops)](https://artik.blue/reversing-radare-3)
   - [ ] r2frida automating reversing in [Reversing x32/x64 with radare2 - 4 - I ((arrays and strings))](https://artik.blue/reversing-radare-4)
 - [ ] Ioli crackme 1
@@ -28,6 +29,9 @@
   - Try to break the IOLI crackme 0x00 (.exe) in Windows using r2
 - Use GHIDRA instead of radare2 
   - [Video on using Ghidra for Reversing crackMe](https://www.youtube.com/watch?v=6p5Qviusskk)
+
+## Questions
+- Double value in the memory is different from float value, ArtikBlue article 2.
 
 ## CheatSheet
 - [Radare 2 cheatsheet](https://github.com/radareorg/radare2/blob/master/doc/intro.md)

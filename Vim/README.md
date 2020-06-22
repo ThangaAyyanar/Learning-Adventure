@@ -1221,6 +1221,18 @@ d<count>i{
 ```
 stole it from Primeagen video
 
+## Day 44 
+File and window related tricks
+```
+ctrl + ^   to swap between files
+:resize constant - resize the window
+:vertical resize constant - resize the window
+```
+
+Vim trick to bring file directory list (similar to nerd tree)
+```
+nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
+```
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

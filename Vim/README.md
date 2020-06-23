@@ -1233,6 +1233,22 @@ Vim trick to bring file directory list (similar to nerd tree)
 ```
 nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 ```
+
+## Day 45
+
+View your history from command mode
+```
+    : to enter command mode
+    ctrl-f to open the command history
+    k to arrow up and select a previous command
+    Enter to run the command
+    : to enter command mode again
+    ctrl-f to open the command history
+    ctrl-c to close the command history
+    Esc to exit command mode
+```
+from **Colin Bartlett** weekly email letter
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

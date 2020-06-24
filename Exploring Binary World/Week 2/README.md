@@ -2,8 +2,8 @@
 
 ## Explore Cutter (r2 GUI)
 - [ ] r2ghidra via r2pm
-- [ ] [Cutter: Presenting r2ghidra Decompiler](https://www.youtube.com/watch?v=eHtMiezr7l8)
-- [ ] [Cutter by @xarkes](https://www.youtube.com/watch?v=w8Bl5ZSmmZM)
+- [x] [Cutter: Presenting r2ghidra Decompiler](https://www.youtube.com/watch?v=eHtMiezr7l8)
+- [x] [Cutter by @xarkes](https://www.youtube.com/watch?v=w8Bl5ZSmmZM)
 
 ## Blogs
 - [ ] [Reversing x32/x64 with radare2 - 5 (var types and casting)](https://artik.blue/reversing-radare-5)

@@ -22,3 +22,9 @@
 ### IOLI crackmes
 - [ ] crackme0x01
 - [ ] crackme0x01
+
+# Other things i learned along way
+- [Run radare2 command in background](https://radareorg.github.io/blog/posts/background_tasks)
+- [Visual mode basics](https://radareorg.github.io/blog/posts/visual-mode)
+- Retdec decompiler - Avast decompiler which can be used with radare2 and cutter.
+- **TODO:** [Linker series by Ian Lance Taylor](https://www.airs.com/blog/page/5?s=linker)

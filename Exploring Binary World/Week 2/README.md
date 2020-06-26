@@ -6,8 +6,8 @@
 - [x] [Cutter by @xarkes](https://www.youtube.com/watch?v=w8Bl5ZSmmZM)
 
 ## Blogs
-- [ ] [Reversing x32/x64 with radare2 - 5 (var types and casting)](https://artik.blue/reversing-radare-5)
-- [ ] [Reversing x32/x64 with radare2 - 6 (multi dimensional arrays and structs)](https://artik.blue/reversing-radare-6)
+- [x] [Reversing x32/x64 with radare2 - 5 (var types and casting)](https://artik.blue/reversing-radare-5)
+- [x] [Reversing x32/x64 with radare2 - 6 (multi dimensional arrays and structs)](https://artik.blue/reversing-radare-6)
 
 ## Megabeets article (Fun read)
 - [ ] [A journey into Radare 2 – Part 1: Simple crackme](https://www.megabeets.net/a-journey-into-radare-2-part-1)
@@ -21,7 +21,7 @@
   - [ ] **GOAL:** keep track of the state of that array every time its values get modified by using pf
 ### IOLI crackmes
 - [ ] crackme0x01
-- [ ] crackme0x01
+- [ ] crackme0x02
 
 # Other things i learned along way
 - [Run radare2 command in background](https://radareorg.github.io/blog/posts/background_tasks)

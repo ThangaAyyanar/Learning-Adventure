@@ -1249,6 +1249,18 @@ View your history from command mode
 ```
 from **Colin Bartlett** weekly email letter
 
+## Day 46
+Write with sudo without leaving Vim
+```
+:w !sudo tee %
+```
+Handy Plugins to do this thing in simple manner
+```
+eunuch.vim plugin
+you’ll have an easy option with the handy :SudoWrite command.
+```
+from **Colin Bartlett** weekly email letter
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

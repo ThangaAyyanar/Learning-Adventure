@@ -1,7 +1,7 @@
 # Week 2
 
 ## Explore Cutter (r2 GUI)
-- [ ] r2ghidra via r2pm
+- [x] r2ghidra via r2pm
 - [x] [Cutter: Presenting r2ghidra Decompiler](https://www.youtube.com/watch?v=eHtMiezr7l8)
 - [x] [Cutter by @xarkes](https://www.youtube.com/watch?v=w8Bl5ZSmmZM)
 
@@ -15,10 +15,10 @@
 
 ## Practice
 - [x] Re-create what you've done the last week but this time using cutter.
-- [ ] Explore pf command
-  - [ ] C program that declares a char array of 20 chars
-  - [ ] Generating a "serial-key" inside that array, that serial key is never printed and "deleted from memory" at some point on the program
-  - [ ] **GOAL:** keep track of the state of that array every time its values get modified by using pf
+- [x] Explore pf command
+  - [x] C program that declares a char array of 20 chars
+  - [x] Generating a "serial-key" inside that array, that serial key is never printed and "deleted from memory" at some point on the program
+  - [x] **GOAL:** keep track of the state of that array every time its values get modified by using pf
 ### IOLI crackmes
 - [x] crackme0x01
 - [x] crackme0x02

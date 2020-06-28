@@ -14,14 +14,14 @@
 - [x] [A journey into Radare 2 – Part 2: Exploitation](https://www.megabeets.net/a-journey-into-radare-2-part-2)
 
 ## Practice
-- [ ] Re-create what you've done the last week but this time using cutter.
+- [x] Re-create what you've done the last week but this time using cutter.
 - [ ] Explore pf command
   - [ ] C program that declares a char array of 20 chars
   - [ ] Generating a "serial-key" inside that array, that serial key is never printed and "deleted from memory" at some point on the program
   - [ ] **GOAL:** keep track of the state of that array every time its values get modified by using pf
 ### IOLI crackmes
 - [x] crackme0x01
-- [ ] crackme0x02
+- [x] crackme0x02
 
 # Other things i learned along way
 - [Run radare2 command in background](https://radareorg.github.io/blog/posts/background_tasks)

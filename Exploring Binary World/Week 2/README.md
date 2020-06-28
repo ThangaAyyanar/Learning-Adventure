@@ -10,8 +10,8 @@
 - [x] [Reversing x32/x64 with radare2 - 6 (multi dimensional arrays and structs)](https://artik.blue/reversing-radare-6)
 
 ## Megabeets article (Fun read)
-- [ ] [A journey into Radare 2 – Part 1: Simple crackme](https://www.megabeets.net/a-journey-into-radare-2-part-1)
-- [ ] [A journey into Radare 2 – Part 2: Exploitation](https://www.megabeets.net/a-journey-into-radare-2-part-2)
+- [x] [A journey into Radare 2 – Part 1: Simple crackme](https://www.megabeets.net/a-journey-into-radare-2-part-1)
+- [x] [A journey into Radare 2 – Part 2: Exploitation](https://www.megabeets.net/a-journey-into-radare-2-part-2)
 
 ## Practice
 - [ ] Re-create what you've done the last week but this time using cutter.
@@ -20,7 +20,7 @@
   - [ ] Generating a "serial-key" inside that array, that serial key is never printed and "deleted from memory" at some point on the program
   - [ ] **GOAL:** keep track of the state of that array every time its values get modified by using pf
 ### IOLI crackmes
-- [ ] crackme0x01
+- [x] crackme0x01
 - [ ] crackme0x02
 
 # Other things i learned along way

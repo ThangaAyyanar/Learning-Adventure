@@ -1261,6 +1261,22 @@ you’ll have an easy option with the handy :SudoWrite command.
 ```
 from **Colin Bartlett** weekly email letter
 
+## Day 47 ( g - Goodness )
+```
+g + ctrl-g   get more details about current offset, percentage
+g8           ascii code of a character
+g<           open the console ouput once again
+gf           goto file path which is currently present under cursor
+g&           replace last subsitute command globally in the file
+J            Move the below line text to current line with space
+gJ            Move the below line text to current line with identation
+gq           indent line to columnwidth(80) per row
+gQ           go to EX-mode (:visual mode to get back)
+8g_          jump 8 line below and put the cursor at end of the line
+g??          rot13 on the line
+gv           Rehighlight the last highlighted text
+gi           jump to last insert mode cursor location
+```
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

@@ -1277,6 +1277,13 @@ g??          rot13 on the line
 gv           Rehighlight the last highlighted text
 gi           jump to last insert mode cursor location
 ```
+## Day 48 
+
+Live subtitution in neovim
+```
+set inccommand=nosplit
+```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

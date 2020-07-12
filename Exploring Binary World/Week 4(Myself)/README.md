@@ -9,8 +9,8 @@
 ## Practice
 
 ### Ioli crackme
-- [ ] crackme0x6
-- [ ] crackme0x7
+- [x] crackme0x6
+- [x] crackme0x7
 
 ### R2 pipe challenge
 - [ ] Automate the stuff done in the blog.

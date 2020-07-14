@@ -1284,6 +1284,13 @@ Live subtitution in neovim
 set inccommand=nosplit
 ```
 
+## Day 49 - xml beautify inside vim
+
+```
+:'<,'>!xmllint --format -
+```
+reference: https://stackoverflow.com/questions/21408222/vim-indent-xml-file
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

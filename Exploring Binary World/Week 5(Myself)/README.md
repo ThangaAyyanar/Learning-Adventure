@@ -25,3 +25,7 @@ reference: https://www.thegeekstuff.com/2014/04/gdbserver-example/
 - Learn little bit about fuzzing
 gamozo in twitch streaming fuzz week which has 4 streams gone through one and half.
 https://www.twitch.tv/search?term=gamozo%20fuzz%20week
+
+### Algorithms
+- XorShift random number generator
+  - https://en.wikipedia.org/wiki/Xorshift

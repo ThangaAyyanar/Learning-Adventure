@@ -2,7 +2,8 @@
 # Week 6
 
 ## Explore
-- [ ] ARM Architecture (particularly calling conventions) 
+- [ ] ARM Architecture (particularly calling conventions).
+ - https://azeria-labs.com/writing-arm-assembly-part-1/
 
 ## Artik's Article
 - [ ] [Reverse engineering x64 binaries with Radare2 - 14 (the windows api: theory, helloworld and files)](https://artik.blue/reversing-radare-14)

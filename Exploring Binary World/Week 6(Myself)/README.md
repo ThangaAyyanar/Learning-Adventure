@@ -2,7 +2,7 @@
 # Week 6
 
 ## Explore
-- [ ] ARM Architecture (particularly calling conventions).
+- [x] ARM Architecture
  - https://azeria-labs.com/writing-arm-assembly-part-1/
 
 ## Artik's Article
@@ -11,4 +11,4 @@
 
 ## Practice
 - [ ] Try Ioli crackme in windows
-- [ ] [Beginner Reversing in nightmare](https://guyinatuxedo.github.io/index.html)
+- [x] [Beginner Reversing in nightmare](https://guyinatuxedo.github.io/index.html)

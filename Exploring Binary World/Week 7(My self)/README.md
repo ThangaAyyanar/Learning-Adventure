@@ -6,6 +6,9 @@ provides a wide variety of challenges with explanation which seems to be the per
 
 # Nightmare
 Solve 3 Buffer overflow problems in nightmare
-- [ ] Csaw 2018 Quals Boi
-- [ ] Tamu19 pwn1
-- [ ] Tokoyo Western'17 - Just Do It!
+- [x] Csaw 2018 Quals Boi
+  This problem is pretty straight forward
+- [x] Tamu19 pwn1
+  This problem is pretty straight forward
+- [x] Tokoyo Western'17 - Just Do It!
+   Really love this problem, It is different and took us few hours to came to right solution.

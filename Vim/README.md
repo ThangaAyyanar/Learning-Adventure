@@ -1291,6 +1291,26 @@ set inccommand=nosplit
 ```
 reference: https://stackoverflow.com/questions/21408222/vim-indent-xml-file
 
+## Day 50 - fugitive 2
+
+Git mapping for Resolving conflicts
+```
+nnoremap <leader>gg :diffget<cr>
+nnoremap <leader>gf :diffget //2<cr>
+nnoremap <leader>gh :diffput //3<cr>
+nnoremap <leader>gs :G<cr>
+" dv - on :G to resolve
+```
+
+FZF integration for git checkout using **Plug 'stsewd/fzf-checkout.vim'**
+```
+    "FZF git checkout plugin
+    let g:fzf_checkout_create_key = 'ctrl-c'
+    nnoremap <leader>gc :FzfGCheckout<cr>
+```
+Reference: https://www.youtube.com/watch?v=PO6DxfGPQvw    
+           https://www.youtube.com/watch?v=73RulF4Md4Q
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

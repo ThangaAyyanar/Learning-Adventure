@@ -1311,6 +1311,12 @@ FZF integration for git checkout using **Plug 'stsewd/fzf-checkout.vim'**
 Reference: https://www.youtube.com/watch?v=PO6DxfGPQvw    
            https://www.youtube.com/watch?v=73RulF4Md4Q
 
+## Day 51 - Trying Fern.vim
+Async file manager 
+```
+Plug 'lambdalisue/fern.vim'
+```
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

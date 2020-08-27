@@ -1344,10 +1344,14 @@ Bring 20 lines after the matched text
 
 Reference: (The Primeagen video) https://www.youtube.com/watch?v=q7gr6s8skt0
 
+# Books
+* [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
+* [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim) recommends for begineers (Work In Progress)
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)
-* Book: [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
+* Book: 
 * Blog: [Chris at machine](http://chrisatmachine.com)
 
 # Youtube Videos
@@ -1356,5 +1360,5 @@ Reference: (The Primeagen video) https://www.youtube.com/watch?v=q7gr6s8skt0
 * [vim + tmux - OMG!Code](https://www.youtube.com/watch?v=5r6yzFEXajQ)
 * [Let vim do the typing](https://www.youtube.com/watch?v=3TX3kV3TICU)
 
-# Coppied by other vimrc's
+# Coppied from other vimrc's
 * https://raw.githubusercontent.com/tojochacko/vim/master/commands-list

@@ -1315,6 +1315,13 @@ Reference: https://www.youtube.com/watch?v=PO6DxfGPQvw
 Async file manager 
 ```
 Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/nerdfont.vim'
+Plug 'lambdalisue/glyph-palette.vim'
+Plug 'lambdalisue/fern-renderer-nerdfont.vim'
+```
+to support nerd font
+```
+let g:fern#renderer = "nerdfont"
 ```
 
 ## Day 52 - COC Search 

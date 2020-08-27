@@ -1317,6 +1317,26 @@ Async file manager
 Plug 'lambdalisue/fern.vim'
 ```
 
+## Day 52 - COC Search 
+The CocSearch can search contents in entire project.
+Anything edited in search window will save to the file,
+- We can replace variable in entire project
+- We can also execute macros
+
+Search the word on the cursor (Mapping)
+```
+nnoremap <leader>cs :CocSearch <C-R>=expand("<cword>")<CR><CR>
+```
+
+We can also provide **rg** options to coc search as it uses at it backend
+eg:
+Bring 20 lines after the matched text
+```
+:CocSearch <text/regex> -A 20
+```
+
+Reference: (The Primeagen video) https://www.youtube.com/watch?v=q7gr6s8skt0
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

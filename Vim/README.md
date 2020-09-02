@@ -1350,7 +1350,7 @@ As a quick example, say you have a line like
 ```
 test testing tester
 ```
-:s/test/foo/g        gives **foo fooing fooer**
+:s/test/foo/g        gives **foo fooing fooer**    
 :s/\zstest\zeing/foo gives **test fooing tester**
 
 

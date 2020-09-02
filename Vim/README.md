@@ -1344,6 +1344,16 @@ Bring 20 lines after the matched text
 
 Reference: (The Primeagen video) https://www.youtube.com/watch?v=q7gr6s8skt0
 
+## Day 53 - Search and replace (zs,ze)
+
+As a quick example, say you have a line like 
+```
+test testing tester
+```
+:s/test/foo/g        gives **foo fooing fooer**
+:s/\zstest\zeing/foo gives **test fooing tester**
+
+
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
 * [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim) recommends for begineers (Work In Progress)

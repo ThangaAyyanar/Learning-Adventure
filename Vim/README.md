@@ -1357,11 +1357,11 @@ test testing tester
 
 Sort lines in Vim:
 
-• :sort - sort all lines
-• :sort! - sort in reverse
-• :sort u - removes dupes and sort
-• :sort i - ignore case
-• :sort n - sort numerically
+* :sort - sort all lines
+* :sort! - sort in reverse
+* :sort u - removes dupes and sort
+* :sort i - ignore case
+* :sort n - sort numerically
 
 From: @vim_tricks (twitter account)
 

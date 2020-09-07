@@ -1365,6 +1365,40 @@ Sort lines in Vim:
 
 From: @vim_tricks (twitter account)
 
+## Day 55 - Terminal configuration
+
+Terminal -> Normal remap
+```
+"terminal remap
+tnoremap <C-[> <C-\><C-n>
+```
+Terminal auto configuration when entered and closed from terminal
+```
+" Terminal Enter and close
+function Terminal_enter()
+    set relativenumber!
+    set number!
+    set signcolumn=no
+    startinsert
+endfunction
+
+function Terminal_close()
+    set relativenumber
+    set number
+    set signcolumn=yes
+endfunction
+
+autocmd TermOpen * :call Terminal_enter()
+autocmd TermClose * :call Terminal_close()
+```
+Navigation from terminal to windows
+```
+tnoremap <c-h> <C-\><C-N><C-w>h
+tnoremap <c-j> <C-\><C-N><C-w>j
+tnoremap <c-k> <C-\><C-N><C-w>k
+tnoremap <c-l> <C-\><C-N><C-w>l
+```
+
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
 * [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim) recommends for begineers (Work In Progress)

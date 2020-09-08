@@ -1,5 +1,8 @@
 # Vim 100 day challege
 
+## Important - Decided in 8-9-2020
+I like logging this way. but it if i integrated it commit message of vimrc file it will be easy for me and other to check why i made that change and when i made it.Going to rewrite the entire vimrc from scratch again with explanation in each commit message.
+
 I try to learn vim every day and post what i learn everyday 
 
 ## Simple TODO:

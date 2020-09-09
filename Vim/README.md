@@ -1401,6 +1401,37 @@ tnoremap <c-j> <C-\><C-N><C-w>j
 tnoremap <c-k> <C-\><C-N><C-w>k
 tnoremap <c-l> <C-\><C-N><C-w>l
 ```
+## Day 56 - hightlight matching words like vscode and intellj
+
+```
+Plug 'RRethy/vim-illuminate'
+```
+
+## Day 57 - Run Neovim nightly and stable in same machine
+
+**ASDF** is a program that can handle the version management.    
+reference: https://github.com/asdf-vm/asdf
+
+#### Step i followed
+* Removed the default neovim
+* Install asdf (check the above link)
+* Add neovim plugin
+```
+asdf plugin-add neovim
+```
+* Install neovim version - stable and set stable version as default.
+```
+asdf install neovim stable
+asdf global neovim stable
+```
+* Install neovim version - nightly 
+```
+asdf install neovim nightly
+```
+* Enable nightly when you need it (using shell command)
+```
+asdf shell neovim nightly
+```
 
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)

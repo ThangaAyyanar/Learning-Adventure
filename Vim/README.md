@@ -1440,7 +1440,6 @@ asdf shell neovim nightly
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)
-* Book: 
 * Blog: [Chris at machine](http://chrisatmachine.com)
 
 # Youtube Videos
@@ -1449,5 +1448,6 @@ asdf shell neovim nightly
 * [vim + tmux - OMG!Code](https://www.youtube.com/watch?v=5r6yzFEXajQ)
 * [Let vim do the typing](https://www.youtube.com/watch?v=3TX3kV3TICU)
 
-# Coppied from other vimrc's
+# Other vimrc's
+* https://github.com/mattboehm/dotfiles/blob/master/vim/vimrc
 * https://raw.githubusercontent.com/tojochacko/vim/master/commands-list

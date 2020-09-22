@@ -38,3 +38,6 @@
 - [ ] Cython    
     
 Reference: https://www.youtube.com/watch?v=p15xzjzR9j0
+
+## Project i like to implement
+- [ ] https://www.leshenko.net/p/ugit  - Build git (learn the internal of git)

@@ -1,2 +1,4 @@
-# Learn-by-challenge
-similar to 100 day challenge ( learn things by challenge )
+# Learning Adventure
+The repo contains
+- Notes
+- Issues faced while learning

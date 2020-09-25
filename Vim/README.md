@@ -1453,6 +1453,12 @@ gF with the selection |...| on |path to/file.ext|:5:2 to edit file.ext on line 5
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
 * [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim) recommends for begineers (Work In Progress)
 
+# Awesome blog articles
+* https://www.brianstorti.com/vim-registers/
+
+# Awesome Plugins (Need to check)
+- [ ] https://github.com/mhinz/neovim-remote
+
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 * Plugins: [https://vimawesome.com/](https://vimawesome.com/)

@@ -1449,6 +1449,13 @@ gF with the cursor at ^ on path/to^/file.ext:98,8 to edit file.ext on line 98, c
 gF with the selection |...| on |path to/file.ext|:5:2 to edit file.ext on line 5, column 2
  ```
 
+## Day 59 - Global command example
+
+Quickly remove all empty lines
+```
+:g/^$/d
+```
+
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
 * [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim) recommends for begineers (Work In Progress)

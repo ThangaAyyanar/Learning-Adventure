@@ -1432,10 +1432,39 @@ asdf install neovim nightly
 ```
 asdf shell neovim nightly
 ```
+## Day 58 - Open Vim to a specific line
+
+    vim myfile.js +10 - Opens myfile.js, jumps to line 10
+
+    vim +10 myfile.js - Same! Argument order doesn’t matter
+    
+ source: Colin Bartlett (Newsletter)
+ 
+ plugins similar to this   
+ https://github.com/wsdjeg/vim-fetch
+ ```
+vim path/to/file.ext:12:3 in the shell to open file.ext on line 12 at column 3
+:e[dit] path/to/file.ext:100:12 in Vim to edit file.ext on line 100 at column 12
+gF with the cursor at ^ on path/to^/file.ext:98,8 to edit file.ext on line 98, column 8
+gF with the selection |...| on |path to/file.ext|:5:2 to edit file.ext on line 5, column 2
+ ```
+
+## Day 59 - Global command example
+
+Quickly remove all empty lines
+```
+:g/^$/d
+```
 
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
 * [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim) recommends for begineers (Work In Progress)
+
+# Awesome blog articles
+* https://www.brianstorti.com/vim-registers/
+
+# Awesome Plugins (Need to check)
+- [ ] https://github.com/mhinz/neovim-remote
 
 # Reference
 * Package Installer: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)

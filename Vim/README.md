@@ -1456,6 +1456,17 @@ Quickly remove all empty lines
 :g/^$/d
 ```
 
+## Day 60 - Rest api from vim
+- We need to have curl installed to do this trick
+```
+nnoremap <leader>cc vipyPgvO<Esc>O<Esc>gv:!curl --config -<CR>
+```
+resources: 
+- https://nazarii.bardiuk.com/posts/vim-curl.html
+
+Plugin which does things bit better
+- https://github.com/diepm/vim-rest-console
+
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
 * [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim) recommends for begineers (Work In Progress)

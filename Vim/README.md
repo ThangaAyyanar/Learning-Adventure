@@ -1505,6 +1505,31 @@ next Quickfix list
 ```
 :cnewer
 ```
+Learned from: @vim_tricks (twitter)
+
+## Day 63 - search through the keybinding
+
+search through the keybindings
+```
+:filter pattern imap <insert mapping>
+:filter pattern nmap <normal>
+```
+Learned from: @vim_tricks (twitter)
+
+## Day 64 - execute one normal command from insert mode 
+
+```
+ctrl+o 
+
+then execute one normal keymap and it will be automatically go back to insert mode
+```
+Learned from: https://appletree.or.kr/quick_reference_cards/Unix-Linux/vim-modes-transition-diagram.svg
+
+## Day 65: UML diagram in Vim
+
+- https://github.com/skanehira/preview-uml.vim
+- interactive uml diagram generation using the above plugin.
+- It uses plant uml to acheive it
 
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)

@@ -1467,6 +1467,45 @@ resources:
 Plugin which does things bit better
 - https://github.com/diepm/vim-rest-console
 
+## Day 60 - Vim args (multiple file search and replace)
+
+open the relevant files to do changes
+```
+:args <Files>
+or
+:args <Glob>
+
+eg:
+args path/*
+```
+Subtitution
+```
+argodo %s/find/replace/g
+```
+save the changes
+```
+argdo update
+```
+Learned from: @vim_tricks (twitter)
+
+## Day 61 - Scroll bind
+Have you ever faced a suitation where you open two files and need to scroll them simultaneously, This can be acheived using
+```
+set scrollbind
+```
+Learned from: @vim_tricks (twitter)
+
+## Day 62 - Quickfix
+
+previous Quickfix list
+```
+:colder
+```
+next Quickfix list
+```
+:cnewer
+```
+
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
 * [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim) recommends for begineers (Work In Progress)

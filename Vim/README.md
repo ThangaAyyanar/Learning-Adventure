@@ -1538,6 +1538,13 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 ```
 as the previous used plugin got deprecated
 
+## Day 67: Smooth scrolling & hoon syntax highlight
+
+```
+Plug 'psliwka/vim-smoothie'
+Plug 'urbit/hoon.vim'
+```
+
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
 * [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim) recommends for begineers (Work In Progress)

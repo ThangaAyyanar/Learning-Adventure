@@ -1545,6 +1545,19 @@ Plug 'psliwka/vim-smoothie'
 Plug 'urbit/hoon.vim'
 ```
 
+# Day 68: Git fugitvie
+
+Git history of a folder or file
+```
+Glog -- %
+```
+Git log taking long time
+```
+Glog -<number> = limit
+Glog -100 for swift responses
+```
+source: ThePrimeagen Twitter feed
+
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
 * [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim) recommends for begineers (Work In Progress)

@@ -1558,6 +1558,37 @@ Glog -100 for swift responses
 ```
 source: ThePrimeagen Twitter feed
 
+## Day 69: Snippets
+
+The snippets collection plugin
+```
+Plug 'honza/vim-snippets'
+```
+snippets completion is taken care of **coc**
+```
+:cocinstall coc-snippets
+```
+source: https://www.chrisatmachine.com/Neovim/17-snippets/
+
+## Day 70: Python Playground and Jupyter like environment
+```
+Plug 'jupyter-vim/jupyter-vim'
+```
+For jupyter vim need to attach to **qtconsole** ( the reason for using qtconsole to display images, plots )
+
+```
+Plug 'metakirby5/codi.vim'
+```
+
+to start codi which is similar to playground in xcode, display the instant result near the command
+```
+:codi
+```
+
+sources:
+- https://github.com/broesler/jupyter-vim#info
+- https://github.com/metakirby5/codi.vim
+
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
 * [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim) recommends for begineers (Work In Progress)
@@ -1582,3 +1613,4 @@ source: ThePrimeagen Twitter feed
 # Other vimrc's
 * https://github.com/mattboehm/dotfiles/blob/master/vim/vimrc
 * https://raw.githubusercontent.com/tojochacko/vim/master/commands-list
+

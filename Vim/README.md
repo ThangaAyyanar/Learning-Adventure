@@ -1595,6 +1595,7 @@ sources:
 
 # Awesome blog articles
 * https://www.brianstorti.com/vim-registers/
+* https://stackoverflow.com/questions/3031009/what-does-the-compiler-command-do-in-vim ( How to use compiler folder in vim runtime )
 
 # Awesome Plugins (Need to check)
 - [ ] https://github.com/mhinz/neovim-remote

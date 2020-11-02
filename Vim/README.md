@@ -1,8 +1,5 @@
 # Vim 100 day challege
 
-## Important - Decided in 8-9-2020
-I like logging this way. but it if i integrated it commit message of vimrc file it will be easy for me and other to check why i made that change and when i made it.Going to rewrite the entire vimrc from scratch again with explanation in each commit message.
-
 I try to learn vim every day and post what i learn everyday 
 
 ## Simple TODO:
@@ -1596,6 +1593,7 @@ sources:
 # Awesome blog articles
 * https://www.brianstorti.com/vim-registers/
 * https://stackoverflow.com/questions/3031009/what-does-the-compiler-command-do-in-vim ( How to use compiler folder in vim runtime )
+* https://castel.dev/ ( Lecture notes using Vim+Latex+Inkscape )
 
 # Awesome Plugins (Need to check)
 - [ ] https://github.com/mhinz/neovim-remote

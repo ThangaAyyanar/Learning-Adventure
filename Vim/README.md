@@ -1582,6 +1582,10 @@ to start codi which is similar to playground in xcode, display the instant resul
 :codi
 ```
 
+sources:
+- https://github.com/broesler/jupyter-vim#info
+- https://github.com/metakirby5/codi.vim
+
 ## Day 71: Mobile developement using Flutter
 
 - It works out of the box using **coc-flutter** but come across few issues such as Hotreload is not working
@@ -1589,9 +1593,6 @@ to start codi which is similar to playground in xcode, display the instant resul
 
 - Developed a sample app, encounters lot of alignment related issues.
 
-sources:
-- https://github.com/broesler/jupyter-vim#info
-- https://github.com/metakirby5/codi.vim
 
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)

@@ -1593,6 +1593,11 @@ sources:
 
 - Developed a sample app, encounters lot of alignment related issues.
 
+## Day 72: ctrl+y and ctrl+e
+
+ctrl+y and ctrl+e two binding in the insert mode, insert character above and below the current line
+
+src: VimTricks
 
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)

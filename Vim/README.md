@@ -1597,7 +1597,16 @@ sources:
 
 ctrl+y and ctrl+e two binding in the insert mode, insert character above and below the current line
 
-src: VimTricks
+Learned from: @vim_tricks (twitter)
+
+## Day 73: Append selected text to file
+
+Use >> before your filename to append rather than overwrite.
+```
+:w >>path/to/new/file.rb<Enter> appends the lines to the existing file
+```
+
+Learned from: @vim_tricks (twitter)
 
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)

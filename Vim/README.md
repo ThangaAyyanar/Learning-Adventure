@@ -1606,7 +1606,30 @@ Use >> before your filename to append rather than overwrite.
 :w >>path/to/new/file.rb<Enter> appends the lines to the existing file
 ```
 
+## Day 73: ctrl+g and ctrl+t from search bar
+
+you can able to move to next and previous word matches current searches from search bar without pressing enter
+
 Learned from: @vim_tricks (twitter)
+
+## Day 74: Scrolloff
+
+```
+set scrolloff=<num>
+```
+able to scroll before <num> from bottom
+
+Learned from primeagen video
+
+## Day 75: Override vim runtime 
+
+```
+ -u vimrc
+
+Use vimrc instead of the default ~/.config/nvim/init.vim.  If vimrc is NORC, do not load any initialization files (except plugins), and do not attempt to parse environment variables.  If vimrc is NONE, loading plugins is also skipped.
+
+:help initialization
+```
 
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)

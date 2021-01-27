@@ -1631,6 +1631,19 @@ Use vimrc instead of the default ~/.config/nvim/init.vim.  If vimrc is NORC, do 
 :help initialization
 ```
 
+## Day 76: Replace Tabbar with vista plugin
+
+```
+Plug 'liuchengxu/vista.vim',{ 'on': 'Vista'}
+```
+It is better than tagbar also able to work with COC :)
+```
+let g:vista_executive_for = {
+  \ 'swift': 'coc',
+  \ 'dart': 'coc',
+  \ }
+```
+
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
 * [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim) recommends for begineers (Work In Progress)

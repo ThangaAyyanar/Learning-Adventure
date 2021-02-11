@@ -1643,6 +1643,28 @@ let g:vista_executive_for = {
   \ 'dart': 'coc',
   \ }
 ```
+## Day 77: Trying Telescope.nvim plugin with Neovim nightly
+
+Telescope plugin replace the FZF plugin which is written in lua and works in
+nvim nightly
+
+Plugins need to installed
+```
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+```
+Keybinding (referenced from Primeagen)
+```
+nnoremap <leader>ps :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
+nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
+nnoremap <Leader>pf :lua require('telescope.builtin').find_files()<CR>
+
+nnoremap <leader>pw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
+nnoremap <leader>pb :lua require('telescope.builtin').buffers()<CR>
+nnoremap <leader>vh :lua require('telescope.builtin').help_tags()<CR>
+```
+
 
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)

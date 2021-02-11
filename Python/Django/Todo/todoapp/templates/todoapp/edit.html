@@ -1,0 +1,19 @@
+
+{% extends 'todoapp/base.html' %}
+ 
+{% block content %}
+    <section class="section">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="field has-addons">
+                <div class="control">
+                    <input name="task" class="input" type="text" placeholder="{{ todo.task }}" value="{{ todo.task }}">
+                    <input name="completed" type="hidden" value="{{ todo.completed }}">
+                </div>
+                <div class="control">
+                    <button type="submit" class="button is-link">Edit Todo</button>
+                </div>
+            </div>
+        </form>
+    </section>
+{% endblock %}

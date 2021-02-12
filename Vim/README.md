@@ -1665,6 +1665,27 @@ nnoremap <leader>pb :lua require('telescope.builtin').buffers()<CR>
 nnoremap <leader>vh :lua require('telescope.builtin').help_tags()<CR>
 ```
 
+## Day 78: Trying Treesitter
+
+Installation
+```
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/playground'
+```
+
+Check the Installed Treesitter parsers
+```
+TSInstallInfo
+```
+Install Treesitter parsers
+```
+TSInstall python
+TSInstall swift
+```
+Check Abstract Syntax tree of given file
+```
+TSPlaygroundToggle
+```
 
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)

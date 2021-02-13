@@ -1687,6 +1687,19 @@ Check Abstract Syntax tree of given file
 TSPlaygroundToggle
 ```
 
+## Day 79: Gnupg
+
+Simple encryption for the text file
+```
+gpg -c <filename>
+```
+Opening gpg encrytped files using neovim
+```
+Plug 'jamessan/vim-gnupg'
+```
+It works out of the box when you open text file, it will ask password and after
+you enter it, you can read your file.
+
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
 * [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim) recommends for begineers (Work In Progress)

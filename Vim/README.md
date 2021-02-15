@@ -1700,6 +1700,112 @@ Plug 'jamessan/vim-gnupg'
 It works out of the box when you open text file, it will ask password and after
 you enter it, you can read your file.
 
+## Day 80: Neovim lsp
+Neovim lsp installation
+```
+Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-lua/completion-nvim'
+```
+Key binding and stuffs
+```
+set completeopt=menuone,noinsert,noselect
+
+" Lsp configurations
+nnoremap <leader>vd :lua vim.lsp.buf.definition()<CR>
+nnoremap <leader>vi :lua vim.lsp.buf.implementation()<CR>
+nnoremap <leader>vsh :lua vim.lsp.buf.signature_help()<CR>
+nnoremap <leader>vrr :lua vim.lsp.buf.references()<CR>
+nnoremap <leader>vrn :lua vim.lsp.buf.rename()<CR>
+nnoremap <leader>vh :lua vim.lsp.buf.hover()<CR>
+nnoremap <leader>vca :lua vim.lsp.buf.code_action()<CR>
+nnoremap <leader>vsd :lua vim.lsp.util.show_line_diagnostics(); vim.lsp.util.show_line_diagnostics()<CR>
+
+let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
+
+```
+Activate LSP
+```
+lua require'lspconfig'.pyright.setup{ on_attach=require'completion'.on_attach }
+lua require'lspconfig'.sourcekit.setup{ on_attach=require'completion'.on_attach }
+lua require'lspconfig'.vimls.setup{ on_attach=require'completion'.on_attach }
+
+```
+
+# Day 81: Debugging Adaptor Protocol
+
+- It is similar to LSP but for debugging programs.
+- Installation to support debuggging python.
+```
+" Debugging plugins
+Plug 'nvim-telescope/telescope-dap.nvim'
+Plug 'mfussenegger/nvim-dap'
+Plug 'mfussenegger/nvim-dap-python'
+
+```
+- Debugging keybindings and configurations
+```
+" Debugging Initialization
+lua require('telescope').load_extension('dap')
+lua require('dap-python').setup('/usr/bin/python3')
+
+" Debugging
+nnoremap <silent> <F5> :lua require'dap'.continue()<CR>
+nnoremap <silent> <leader>dd :lua require('dap').continue()<CR>
+nnoremap <silent> <F10> :lua require'dap'.step_over()<CR>
+nnoremap <silent> <F11> :lua require'dap'.step_into()<CR>
+nnoremap <silent> <F12> :lua require'dap'.step_out()<CR>
+nnoremap <silent> <leader>b :lua require'dap'.toggle_breakpoint()<CR>
+nnoremap <silent> <leader>B :lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>
+nnoremap <silent> <leader>lp :lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>
+nnoremap <silent> <leader>dr :lua require'dap'.repl.open()<CR>
+nnoremap <silent> <leader>dl :lua require'dap'.repl.run_last()<CR>`
+
+" Python specific debugging
+nnoremap <silent> <leader>dn :lua require('dap-python').test_method()<CR>
+vnoremap <silent> <leader>ds <ESC>:lua require('dap-python').debug_selection()<CR>
+```
+
+# Day 82: Snippets 
+
+As i removed COC, so need to find a way to use snippets
+- Ultisnippets
+```
+Plug 'SirVer/ultisnips'
+" Snippets bundle
+Plug 'honza/vim-snippets'
+```
+- Activate ultisnips
+```
+" Ultisnips in autocompletion
+let g:completion_enable_snippet = 'UltiSnips'
+```
+
+# Day 83: cheat.sh
+url: https://github.com/chubin/cheat.sh
+
+cheat.sh is awesome website which provide code block for question you asked.
+
+example: 
+you want to know, how to open file in python.
+pass the string **open file in python** to cheat.sh it will return the code block.
+
+plugin
+```
+Plug 'dbeniamine/cheat.sh-vim'
+```
+Automatic keybinding by this plugin
+```
+<leader>KB get the answer on a special buffer
+<leader>KR Replace your question by the answer
+<leader>KP Past the answer below your question
+<leader>KC Replay last query, toggling comments
+<leader>KE Send first error to cht.sh
+<leader>C Toggle showing comments by default see configuration
+<leader>KL Replay last query
+```
+
+----
+
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
 * [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim) recommends for begineers (Work In Progress)
@@ -1708,6 +1814,7 @@ you enter it, you can read your file.
 * https://www.brianstorti.com/vim-registers/
 * https://stackoverflow.com/questions/3031009/what-does-the-compiler-command-do-in-vim ( How to use compiler folder in vim runtime )
 * https://castel.dev/ ( Lecture notes using Vim+Latex+Inkscape )
+* https://medium.com/swlh/neovim-lsp-dap-and-fuzzy-finder-60337ef08060 (LSP and DAP)
 
 # Awesome Plugins (Need to check)
 - [ ] https://github.com/mhinz/neovim-remote

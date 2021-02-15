@@ -1,7 +1,5 @@
 # Vim 100 day challege
 
-I try to learn vim every day and post what i learn everyday 
-
 ## Simple TODO:
 
 - [x] Package Manager
@@ -1728,7 +1726,7 @@ Activate LSP
 lua require'lspconfig'.pyright.setup{ on_attach=require'completion'.on_attach }
 lua require'lspconfig'.sourcekit.setup{ on_attach=require'completion'.on_attach }
 lua require'lspconfig'.vimls.setup{ on_attach=require'completion'.on_attach }
-
+lua require'lspconfig'.dartls.setup{ on_attach=require'completion'.on_attach }
 ```
 
 # Day 81: Debugging Adaptor Protocol
@@ -1802,6 +1800,23 @@ Automatic keybinding by this plugin
 <leader>KE Send first error to cht.sh
 <leader>C Toggle showing comments by default see configuration
 <leader>KL Replay last query
+```
+
+# Day 84: SideScrollOff and Copy file path
+
+I find scrolloff which start to scroll before n lines similar to that we can
+set side scrolloff
+```
+set sidescrolloff=10
+```
+Copy current file's absolute path
+```
+nnoremap <leader>cp :let @" = expand("%p")<cr>
+```
+
+Copy current file's absolute path
+```
+nnoremap <leader>cp :let @" = expand("%")<cr>
 ```
 
 ----

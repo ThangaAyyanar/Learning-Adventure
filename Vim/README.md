@@ -1774,7 +1774,7 @@ Plug 'honza/vim-snippets'
 ```
 - Activate ultisnips
 ```
-" Ultisnips in autocompletion
+" Ultisnips in completion-nvim
 let g:completion_enable_snippet = 'UltiSnips'
 ```
 
@@ -1817,6 +1817,29 @@ nnoremap <leader>cp :let @" = expand("%p")<cr>
 Copy current file's absolute path
 ```
 nnoremap <leader>cp :let @" = expand("%")<cr>
+```
+
+# Day 85: nvim-completion plugin changes
+
+By default neovim completion fetch data from LSP and Snippets so inorder to
+make it input source to fetch completion from buffer string need to add the 
+following
+
+Plugin
+```
+Plug 'steelsojka/completion-buffers'
+```
+init.vim code
+```
+" attach completion to all buffer
+autocmd BufEnter * lua require'completion'.on_attach()
+
+" add buffer to the completion list
+let g:completion_chain_complete_list = [
+    \{'complete_items': ['lsp', 'snippet', 'buffers']},
+    \{'mode': '<c-p>'},
+    \{'mode': '<c-n>'}
+\]
 ```
 
 ----

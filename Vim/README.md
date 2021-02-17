@@ -1842,6 +1842,24 @@ let g:completion_chain_complete_list = [
 \]
 ```
 
+# Day 86: Vimwiki Tags generation
+
+- Until now i didn't used tags
+- Tags are written as follow
+```
+" single tag
+:TAGNAME1:
+
+" multiple tags
+:TAGNAME1:TAGNAME2:
+```
+- Generate tags using the command
+```
+nnoremap <leader>wgt :VimwikiRebuildTags!<cr>:VimwikiGenerateTagLinks<cr><c-l>
+
+" we can generate tags for particular tags
+:VimwikiGenerateTagLinks <TAGNAME>
+```
 ----
 
 # Books

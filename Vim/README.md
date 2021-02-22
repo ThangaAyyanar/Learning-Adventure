@@ -1867,6 +1867,74 @@ nnoremap <leader>wgt :VimwikiRebuildTags!<cr>:VimwikiGenerateTagLinks<cr><c-l>
 export MANPAGER="nvim -c 'set ft=man' -"
 ```
 
+resource: Distrotube channel in youtube
+
+# Day 88: Searching tricks
+
+Word boundary searches
+```
+/\<word\> search a exact word 
+
+here symbol represent the word boundary
+
+\< - Start boundary of the word.
+\> - End boundary of the word.
+```
+Search patterns
+```
+- \d (digits 0-9)
+- \D (non-digits)
+- \s (whitespace - space and tab)
+- \S (non-whitespace)
+- \w (word char: 0-9, a-z, and _)
+- \W (non-word char)
+- \l (lowercase char a-z)
+- \u (uppercase char A-Z)
+```
+
+resource: @learnvim
+
+# Day 89: Search and replace tricks
+
+```
+%s/\v(learn)( )(vim)/\3(\1)/g
+```
+- \v is a Magical command
+- (print)( )(.*) => group pattern. One for literal "print",
+one for empty space, one for zero or more of any char
+- \1(\3) => \1 is the 1st match. \3 is 3rd match surrounded by ( )
+
+nice trick
+```
+:set nrformats+=alpha
+
+Now Ctrl-A / Ctrl-X will also increment/decrement a-z.
+```
+
+resource: @learnvim
+
+# Day 90: Use vim as sed
+
+Use vim as sed from terminal
+
+```
+vim -e bfast.txt <<-DO
+%s/donut/pancake/g
+w
+DO
+```
+
+resource: @learnvim
+
+# Day 91: Move unstaged file to vim
+
+All the unstaged files will be in your Vim buffers.
+```
+vim $(git status --porcelain | awk '{print $2}')
+```
+
+resource: @learnvim
+
 ----
 
 # Books

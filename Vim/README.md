@@ -1860,6 +1860,13 @@ nnoremap <leader>wgt :VimwikiRebuildTags!<cr>:VimwikiGenerateTagLinks<cr><c-l>
 " we can generate tags for particular tags
 :VimwikiGenerateTagLinks <TAGNAME>
 ```
+
+# Day 87: Set neovim as manpager
+
+```
+export MANPAGER="nvim -c 'set ft=man' -"
+```
+
 ----
 
 # Books

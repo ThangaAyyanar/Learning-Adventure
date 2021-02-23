@@ -1935,6 +1935,64 @@ vim $(git status --porcelain | awk '{print $2}')
 
 resource: @learnvim
 
+# Day 92: Forced motion
+
+Vim can use a forced-motion. 
+Instead of (operator + motion), you can use (operator + v/V/Ctrl-V + motion).
+
+Ex: 
+````
+(d + Ctrl-V + j ) deletes the current character and the character below it.
+
+Works with count too, ex: (d + Ctrl-V + 5j)
+
+````
+resource: @learnvim
+
+# Day 93: Global command
+
+Vim's global command accepts the following form:
+
+```
+:g/pat1/,/pat2/ {cmd}
+```
+
+It will apply the {cmd} within the pat1 and pat2 patterns.
+
+For example, to do a group sort of the texts between "start" and "end":
+
+```
+:g/start/+1,/end/-1 sort
+```
+
+# Day 94: Creating Custom Command
+
+If you have this function to display date:
+
+function MyDate()
+  echo call("strftime", ["%F"])
+endfunction
+
+To assign it to the command `GimmeDate`:
+
+:command GimmeDate call MyDate()
+
+**Creating my own command** for Gvdiffsplit {ONPROGRESS}
+```
+function GitFileDiff(msg)
+  Gvdiffsplit "'.msg.':%"
+endfunction
+
+:command -nargs=1 -complete=customlist,fugitive#EditComplete Gfilediff call GitFileDiff()
+```
+using -complete we can give custom completion i reused from fugitive plugin
+
+# Day 95: Commit only Hunk using fugitive
+
+- Open :Gstatus and select the unstaged file and press =
+- Visually select the line you want to add
+- press **s** to stage the selected hunk
+
 ----
 
 # Books

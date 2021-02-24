@@ -1993,6 +1993,22 @@ using -complete we can give custom completion i reused from fugitive plugin
 - Visually select the line you want to add
 - press **s** to stage the selected hunk
 
+# Day 96: Undo tree plugin
+
+- Trying out undo tree plugin
+```
+Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
+```
+- Mapping
+```
+nnoremap <leader>u :UndotreeToggle<CR>
+```
+- set few options
+```
+set undodir=/tmp
+set undofile
+```
+
 ----
 
 # Books

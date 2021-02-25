@@ -2009,6 +2009,30 @@ set undodir=/tmp
 set undofile
 ```
 
+# Day 97: Invoke Unit Test from vim
+
+- Plugin Installation
+```
+Plug 'vim-test/vim-test'
+```
+- Supports many programming language
+- Mapping
+```
+nnoremap <silent> <leader>tn :TestNearest<CR>
+"nnoremap <silent> t<C-f> :TestFile<CR>
+"nnoremap <silent> t<C-s> :TestSuite<CR>
+"nnoremap <silent> t<C-l> :TestLast<CR>
+"nnoremap <silent> t<C-g> :TestVisit<CR>
+```
+- Strategy
+```
+let test#strategy = "neovim"
+let test#neovim#term_position = "bot"
+```
+- open test in a terminal bottom of neovim.
+
+resource: https://www.youtube.com/watch?v=7VP7TdItuEs
+
 ----
 
 # Books

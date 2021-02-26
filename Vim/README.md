@@ -2033,6 +2033,32 @@ let test#neovim#term_position = "bot"
 
 resource: https://www.youtube.com/watch?v=7VP7TdItuEs
 
+# Day 98: Rest API plugin and Colorscheme changes
+
+- I already found a way to execute rest api inside vim and mentioned in Day 60.
+- Need a configurable environment
+- Plugin Installation
+  ```
+  Plug 'baverman/vial'
+  Plug 'ThangaAyyanar/vial-http'
+  ```
+- create a file with **http** as filetype.
+```
+GET https://httpbin.org/get
+```
+- More snippets on: https://github.com/baverman/vial-http/blob/master/doc/tutorial.rst
+- To execute the rest api command, move cusor to the line and type
+```
+:VialHttp
+```
+
+### Changing colorscheme based on filetypes
+```
+colorscheme gruvbox-material
+autocmd BufEnter *.md colorscheme zephyr
+```
+- set zephyr colorscheme for markdown documents.
+
 ----
 
 # Books

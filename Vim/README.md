@@ -2059,6 +2059,49 @@ autocmd BufEnter *.md colorscheme zephyr
 ```
 - set zephyr colorscheme for markdown documents.
 
+# Day 99: Markdown preview
+
+- Plugin Installation
+```
+plug 'iamcco/markdown-preview.nvim'
+```
+- To activate markdown preview
+```
+:MarkdownPreview
+```
+simply as that, Live changes preview.
+
+Also other tool, I use to view VimWiki docs are
+- Mdwiki
+- docsify
+These tools doesn't update the docs automatically but i like
+```html
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="docsify/vue.css" />
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      //...
+      name: 'My Library',
+      homepage: 'index.md',
+      loadNavbar: true,
+      relativePath: true,
+    }
+  </script>
+  <script src="docsify/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+</body>
+</html>
+```
 ----
 
 # Books

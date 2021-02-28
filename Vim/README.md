@@ -2059,6 +2059,7 @@ autocmd BufEnter *.md colorscheme zephyr
 ```
 - set zephyr colorscheme for markdown documents.
 
+
 # Day 99: Markdown preview
 
 - Plugin Installation
@@ -2102,6 +2103,19 @@ These tools doesn't update the docs automatically but i like
 </body>
 </html>
 ```
+
+# Day 100: Tidy up Vimrc and Vim surround trick
+
+- Split the one big vimrc into multiple files.
+- The files inside plugin directory are automatically loaded.
+- so we seperate the file and drop it into plugin folder.
+
+#### Vim surround
+- Trick is if we use ( it enclose the string with identation eg: ( Hello )
+- If we use ) it encolse the string without identation eg: (Hello)
+- Same applies for other brackets {},[]
+
+source: ThePrimeagen
 ----
 
 # Books

@@ -2116,6 +2116,12 @@ These tools doesn't update the docs automatically but i like
 - Same applies for other brackets {},[]
 
 source: ThePrimeagen
+
+# Day 101: Vim Surround - surround in visual mode
+- This is one i searched for long time :).
+- select the text, you wanna surround and press **S**.
+- Type the bracket you need (,{ (opening one are with indent and closing one will enclose it without indent).
+
 ----
 
 # Books

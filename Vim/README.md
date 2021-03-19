@@ -2122,6 +2122,13 @@ source: ThePrimeagen
 - select the text, you wanna surround and press **S**.
 - Type the bracket you need (,{ (opening one are with indent and closing one will enclose it without indent).
 
+# Day 102: Non greedy search in Vim
+
+Non greedy search in vim is done using {-} operator. Like this:
+```
+%s/style=".\{-}"//g
+```
+source: https://stackoverflow.com/questions/1305853/how-can-i-make-my-match-non-greedy-in-vim
 ----
 
 # Books

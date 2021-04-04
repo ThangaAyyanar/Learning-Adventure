@@ -2129,6 +2129,24 @@ Non greedy search in vim is done using {-} operator. Like this:
 %s/style=".\{-}"//g
 ```
 source: https://stackoverflow.com/questions/1305853/how-can-i-make-my-match-non-greedy-in-vim
+
+# Day 102: Never forgot the key bindings related to leader
+
+plugin which does it `which key`
+
+install plugin
+```
+Plug 'liuchengxu/vim-which-key'
+```
+settings
+```
+" which key settings
+set timeoutlen=500
+let g:which_key_map =  {}
+call which_key#register(',', "g:which_key_map")
+nnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
+vnoremap <silent> <leader> :<c-u>WhichKeyVisual ','<CR>
+```
 ----
 
 # Books
@@ -2158,4 +2176,5 @@ source: https://stackoverflow.com/questions/1305853/how-can-i-make-my-match-non-
 # Other vimrc's
 * https://github.com/mattboehm/dotfiles/blob/master/vim/vimrc
 * https://raw.githubusercontent.com/tojochacko/vim/master/commands-list
+* https://github.com/petobens/dotfiles/blob/master/vim/init.vim
 

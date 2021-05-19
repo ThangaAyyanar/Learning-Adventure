@@ -2149,6 +2149,16 @@ vnoremap <silent> <leader> :<c-u>WhichKeyVisual ','<CR>
 ```
 ----
 
+# Day 103: Insert Mode mapping
+```
+ctrl-h – Delete previous character (same as backspace)
+ctrl-w – Delete previous word
+ctrl-u – Delete entire line (except any indent)
+ctrl-t – Indent the current line
+ctrl-d – Backdent the current line
+```
+src: Email newsletter Vim tricks and tips
+
 # Books
 * [Learn vim the hard way](http://learnvimscriptthehardway.stevelosh.com/)
 * [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim) recommends for begineers (Work In Progress)

@@ -125,12 +125,35 @@ Authors     : Erich Gamma, John Vlissides, Ralph Johnson, Richard Helm
       them to communicate indirectly via a mediator object
     - Example:
       Airplanes communicate with Air Trafic Controlller(Mediator) then they procide for landing
-  - [ ] Memento
+  - [x] Memento
     - Also known as **Snapshot**
-  - [ ] Observer
+    - save and restore the previous state of an object with revealing the details of its implementation.
+  - [x] Observer
     - Let recievers dynamically subscribe to and unsubscribe from receiving requests.
-  - [ ] State
-  - [ ] Strategy
+    - When changes to the state of one object may require changing the
+      other objects, and the actual set of objects is unknown beforehand
+      or changes dynamically.
+    - Some object must observe others, but only for a limited time or in specific cases.
+  - [x] State
+    - Object alter its behavior when its internal state changes.
+    - Each state is written in seperate class implementing interface state
+    - Main class act as context, which start the initial state
+    - Concreate state class perform operation based on the context object
+  - [x] Strategy
     - People confuse it with Bridge
-  - [ ] Template Method
-  - [ ] Visitor
+    - State and Strategy may look similar but State pattern aware of each
+      other whereas Strategies almost never know about each other.
+    - Main class act as context, Client decides which algorithm to use.
+    - Each algorithm is implemented in Startegies, each startegy
+      implements common startegy interface known to context
+  - [x] Template Method
+    - Defines Skeleton of an algorithm in the superclass but lets
+      subclasses override specific steps of the algorithm without changing
+      its structure.
+    - Template method in super class defines in which order the function should be executed.
+    - Subclass override mehtods other than template method to their liking.
+  - [x] Visitor
+    - Lets us seperate algorithms from the objects on which they operate.
+    - When you need to perform an operation on all elements of a complex
+      object structure
+    - Clean up the businness logic of auxiliary behaviors.

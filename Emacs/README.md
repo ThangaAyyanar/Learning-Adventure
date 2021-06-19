@@ -1,15 +1,25 @@
 # Emacs
 - I have basic knowledge in vim related editor.
-- Now i want to try the decade long rival **Emacs**.
+- Now i want to try the eternal long rival of vim **Emacs**.
 - If i can combine the knowledge of both Vim + Emacs that would be awesome.
 
 ## Things i want to integrate
 - [x] Git tools
 - [ ] LSP (Language server)
+  - [ ] Elisp
+  - [ ] Python
+  - [ ] Swift
 - [ ] DAP (Debugging Adaptor)
+  - [ ] Elisp
+  - [ ] Python
+  - [ ] Swift
 - [ ] Easy to test software
+  - [ ] Elisp
+  - [ ] Python
+  - [ ] Swift
 - [ ] Epub book read
 - [ ] PDF book read
+  - Currently it is possible with doc mode but it is slow
 - [ ] Control mpc from emacs
 - [ ] Book tracking in emacs
 - [ ] Markdown integration
@@ -17,14 +27,15 @@
 - [ ] PlantUML integration
 - [ ] [Speed typing](https://github.com/parkouss/speed-type)
 - [ ] [Speed reading](https://git.sr.ht/~iank/spray)
-- [ ] Ledger mode - For finance
 - [ ] Auto Package update
-- [ ] Gnupg integration
-- [ ] Pass integration
 - [ ] Explore elfeed
 - [ ] Cheat.sh
 - [ ] Dasht integration
 - [ ] TaskWarrior integration [or] Using Org mode effectively
+- [ ] Gnupg integration
+- [ ] [GPG with Hledger](https://pzel.name/2016/07/18/Encrypted-hledger-with-emacs-and-gnupg.html)
+  - [ ] hledger mode - For finance
+- [ ] TRAMP integration (remote access the file)
 
 # Auto update packages
 - https://emacs.stackexchange.com/questions/31872/how-to-update-packages-installed-with-use-package/31904#31904

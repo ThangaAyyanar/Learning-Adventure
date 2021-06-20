@@ -5,6 +5,7 @@
 
 ## Things i want to integrate
 - [x] Git tools
+- [x] Dashboard
 - [ ] LSP (Language server)
   - [ ] Elisp
   - [ ] Python
@@ -20,23 +21,24 @@
 - [x] Epub book read
 - [ ] PDF book read
   - Currently it is possible with doc mode but it is slow
-- [ ] Control mpc from emacs
-- [ ] Book tracking in emacs
-- [ ] Markdown integration
+- [ ] Control mpd from emacs
+- [x] Markdown integration
 - [ ] Rest client integration (Emacs package verb)
 - [ ] PlantUML integration
-- [ ] [Speed typing](https://github.com/parkouss/speed-type)
-- [ ] [Speed reading](https://git.sr.ht/~iank/spray)
+- [x] [Speed typing](https://github.com/parkouss/speed-type)
+- [x] [Speed reading](https://git.sr.ht/~iank/spray)
 - [x] Auto Package update
 - [ ] Explore elfeed
     - [ ] org elfeed (feed url from org)
 - [x] Cheat.sh
 - [ ] Dasht integration
 - [ ] Org Mode
+    - [ ] Book tracking in emacs
     - [ ] Use Effective org agenda.
     - [ ] Replace task warrior with it.
     - [ ] Journaling.
     - [ ] Org Roam.
+- [ ] Perspective (Different session)
 - [x] Gnupg integration
 - [ ] [GPG with Hledger](https://pzel.name/2016/07/18/Encrypted-hledger-with-emacs-and-gnupg.html)
   - [ ] hledger mode - For finance
@@ -48,3 +50,4 @@
 ## Awesome emacs config
 - https://github.com/mjago/Emacs/blob/master/init.org
 - Awesome org related config - https://github.com/jparcill/emacs_config
+- Distrotube emacs config - https://gitlab.com/dwt1/dotfiles/-/blob/master/.emacs.d.gnu/config.org

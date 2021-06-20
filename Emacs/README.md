@@ -17,7 +17,7 @@
   - [ ] Elisp
   - [ ] Python
   - [ ] Swift
-- [ ] Epub book read
+- [x] Epub book read
 - [ ] PDF book read
   - Currently it is possible with doc mode but it is slow
 - [ ] Control mpc from emacs
@@ -27,12 +27,17 @@
 - [ ] PlantUML integration
 - [ ] [Speed typing](https://github.com/parkouss/speed-type)
 - [ ] [Speed reading](https://git.sr.ht/~iank/spray)
-- [ ] Auto Package update
+- [x] Auto Package update
 - [ ] Explore elfeed
-- [ ] Cheat.sh
+    - [ ] org elfeed (feed url from org)
+- [x] Cheat.sh
 - [ ] Dasht integration
-- [ ] TaskWarrior integration [or] Using Org mode effectively
-- [ ] Gnupg integration
+- [ ] Org Mode
+    - [ ] Use Effective org agenda.
+    - [ ] Replace task warrior with it.
+    - [ ] Journaling.
+    - [ ] Org Roam.
+- [x] Gnupg integration
 - [ ] [GPG with Hledger](https://pzel.name/2016/07/18/Encrypted-hledger-with-emacs-and-gnupg.html)
   - [ ] hledger mode - For finance
 - [ ] TRAMP integration (remote access the file)
@@ -42,3 +47,4 @@
 
 ## Awesome emacs config
 - https://github.com/mjago/Emacs/blob/master/init.org
+- Awesome org related config - https://github.com/jparcill/emacs_config

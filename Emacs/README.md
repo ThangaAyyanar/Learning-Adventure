@@ -21,7 +21,7 @@
 - [ ] Applications
   - [ ] [Email client](https://macowners.club/posts/email-emacs-mu4e-macos/)
   - [x] Epub book read - using nov
-  - [ ] PDF book read
+  - [x] PDF book read
     - Currently it is possible with doc mode but it is slow
     - May be give pdf-tools a try
 - [ ] Control mpd from emacs
@@ -38,10 +38,11 @@
 - [ ] Org Mode
     - [ ] Book tracking in emacs
     - [ ] Use Effective org agenda.
-    - [ ] Replace task warrior with it.
     - [ ] Journaling.
     - [ ] Org Roam.
 - [ ] Perspective (Different session)
+	- We can use tabs in emacs to achieve differnt window configuration.
+	- But all buffers are visible.
 - [x] Gnupg integration
 - [ ] [GPG with Hledger](https://pzel.name/2016/07/18/Encrypted-hledger-with-emacs-and-gnupg.html)
   - [ ] hledger mode - For finance
@@ -51,7 +52,10 @@
 
 - Ielm
   - M-x ielm (elsp eval loop)
-  - Ctrl+J to evaluate current line and move to next line
+  - Ctrl+J to evaluate current line and move to next line (This command can also be used in *scratch* buffer)
+
+# Awesome emacs blogs
+- https://macowners.club/posts/
 
 # Auto update packages
 - https://emacs.stackexchange.com/questions/31872/how-to-update-packages-installed-with-use-package/31904#31904
@@ -60,3 +64,4 @@
 - https://github.com/mjago/Emacs/blob/master/init.org
 - Awesome org related config - https://github.com/jparcill/emacs_config
 - Distrotube emacs config - https://gitlab.com/dwt1/dotfiles/-/blob/master/.emacs.d.gnu/config.org
+- https://gitlab.com/aimebertrand/dotfiles

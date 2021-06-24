@@ -18,12 +18,15 @@
   - [ ] Elisp
   - [ ] Python
   - [ ] Swift
-- [x] Epub book read
-- [ ] PDF book read
-  - Currently it is possible with doc mode but it is slow
+- [ ] Applications
+  - [ ] [Email client](https://macowners.club/posts/email-emacs-mu4e-macos/)
+  - [x] Epub book read - using nov
+  - [ ] PDF book read
+    - Currently it is possible with doc mode but it is slow
+    - May be give pdf-tools a try
 - [ ] Control mpd from emacs
 - [x] Markdown integration
-- [ ] Rest client integration (Emacs package verb)
+- [x] Rest client integration (Emacs package verb)
 - [ ] PlantUML integration
 - [x] [Speed typing](https://github.com/parkouss/speed-type)
 - [x] [Speed reading](https://git.sr.ht/~iank/spray)
@@ -31,7 +34,7 @@
 - [ ] Explore elfeed
     - [ ] org elfeed (feed url from org)
 - [x] Cheat.sh
-- [ ] Dasht integration
+- [x] Dash integration (Done using counsel-dash)
 - [ ] Org Mode
     - [ ] Book tracking in emacs
     - [ ] Use Effective org agenda.
@@ -43,6 +46,12 @@
 - [ ] [GPG with Hledger](https://pzel.name/2016/07/18/Encrypted-hledger-with-emacs-and-gnupg.html)
   - [ ] hledger mode - For finance
 - [ ] TRAMP integration (remote access the file)
+
+## Things i learned
+
+- Ielm
+  - M-x ielm (elsp eval loop)
+  - Ctrl+J to evaluate current line and move to next line
 
 # Auto update packages
 - https://emacs.stackexchange.com/questions/31872/how-to-update-packages-installed-with-use-package/31904#31904

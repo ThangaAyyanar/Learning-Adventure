@@ -14,7 +14,7 @@
   - [ ] Elisp
   - [ ] Python
   - [ ] Swift
-- [ ] Easy to test software
+- [ ] Easy to test software (use projectile test feature)
   - [ ] Elisp
   - [ ] Python
   - [ ] Swift
@@ -27,7 +27,7 @@
 - [ ] Control mpd from emacs
 - [x] Markdown integration
 - [x] Rest client integration (Emacs package verb)
-- [ ] PlantUML integration
+- [x] PlantUML integration and Graphviz
 - [x] [Speed typing](https://github.com/parkouss/speed-type)
 - [x] [Speed reading](https://git.sr.ht/~iank/spray)
 - [x] Auto Package update
@@ -44,8 +44,10 @@
 	- We can use tabs in emacs to achieve differnt window configuration.
 	- But all buffers are visible.
 - [x] Gnupg integration
-- [ ] [GPG with Hledger](https://pzel.name/2016/07/18/Encrypted-hledger-with-emacs-and-gnupg.html)
-  - [ ] hledger mode - For finance
+- [ ] Finance
+  - [ ] Decide which software going to use
+  - [ ] [GPG with Hledger](https://pzel.name/2016/07/18/Encrypted-hledger-with-emacs-and-gnupg.html)
+    - [ ] hledger mode - For finance
 - [ ] TRAMP integration (remote access the file)
 
 ## Things i learned
@@ -53,6 +55,10 @@
 - Ielm
   - M-x ielm (elsp eval loop)
   - Ctrl+J to evaluate current line and move to next line (This command can also be used in *scratch* buffer)
+
+- Org mode
+  - Narrowing C-x n s
+  - Widening C-x n w
 
 # Awesome emacs blogs
 - https://macowners.club/posts/

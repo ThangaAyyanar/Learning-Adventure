@@ -9,7 +9,7 @@
 - [ ] LSP (Language server)
   - [ ] Elisp
   - [ ] Python
-  - [ ] Swift
+  - [x] Swift
 - [ ] DAP (Debugging Adaptor)
   - [ ] Elisp
   - [ ] Python
@@ -40,7 +40,7 @@
     - [ ] Use Effective org agenda.
     - [ ] Journaling.
     - [ ] Org Roam.
-- [ ] Perspective (Different session)
+- [x] Perspective (Different session)
 	- We can use tabs in emacs to achieve differnt window configuration.
 	- But all buffers are visible.
 - [x] Gnupg integration
@@ -57,8 +57,15 @@
   - Ctrl+J to evaluate current line and move to next line (This command can also be used in *scratch* buffer)
 
 - Org mode
+  - See inline image using (org-toggle-inline-images)
   - Narrowing C-x n s
   - Widening C-x n w
+
+- Display tab bar in emacs
+    - (global-tab-line-mode)
+
+- set nowrap! in emacs
+    - (toggle-truncate-lines)
 
 # Awesome emacs blogs
 - https://macowners.club/posts/

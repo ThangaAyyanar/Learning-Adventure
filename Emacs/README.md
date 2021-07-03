@@ -47,7 +47,7 @@
     - [ ] Book tracking in emacs
     - [x] Use Effective org agenda. (I kindof understand how it works)
     - [x] Journaling. (Using structured template logic learned from SystemCrafters Video)
-    - [ ] Org Roam.
+    - [x] Org Roam.
     - [x] Org Habits
 - [x] Perspective (Different session)
 	- We can use tabs in emacs to achieve differnt window configuration.
@@ -57,6 +57,7 @@
 
 ## Current Bugs i am facing
 - [ ] After projectile switch, Fuzzy search is slow.
+    - this blog has one solution https://www.murilopereira.com/how-to-open-a-file-in-emacs/
 - [ ] SourceKit integration with iOS Library completion missing.
 
 ## Things i learned
@@ -76,6 +77,9 @@
 - set nowrap! in emacs
     - (toggle-truncate-lines)
 
+- Similar command for Tabularize in emacs
+  - align-regexp function
+
 ## Youtube
 - [System Crafters](https://www.youtube.com/c/SystemCrafters/playlists)
   - Emacs, Guix and EXWM related playlist and more.
@@ -83,6 +87,7 @@
 
 ## Awesome emacs blogs
 - https://macowners.club/posts/
+- https://www.murilopereira.com/how-to-open-a-file-in-emacs/
 
 ## Auto update packages
 - https://emacs.stackexchange.com/questions/31872/how-to-update-packages-installed-with-use-package/31904#31904
@@ -92,3 +97,4 @@
 - Awesome org related config - https://github.com/jparcill/emacs_config
 - Distrotube emacs config - https://gitlab.com/dwt1/dotfiles/-/blob/master/.emacs.d.gnu/config.org
 - https://gitlab.com/aimebertrand/dotfiles
+- https://github.com/mpereira/.emacs.d (pretty great dot files)

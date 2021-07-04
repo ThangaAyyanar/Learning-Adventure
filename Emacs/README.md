@@ -29,6 +29,7 @@
   - [ ] [Email client](https://macowners.club/posts/email-emacs-mu4e-macos/)
   - [ ] Explore elfeed
       - [ ] org elfeed (feed url from org)
+      - [ ] Dashboard (feed url from org)
   - [ ] Control mpd from emacs
   - [x] Epub book read - using nov
   - [x] PDF book read
@@ -79,6 +80,9 @@
 
 - Similar command for Tabularize in emacs
   - align-regexp function
+
+- Diff
+  - ediff program can be used to diff buffer, files.
 
 ## Youtube
 - [System Crafters](https://www.youtube.com/c/SystemCrafters/playlists)

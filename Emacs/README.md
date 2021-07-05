@@ -71,6 +71,19 @@
   - See inline image using (org-toggle-inline-images)
   - Narrowing C-x n s
   - Widening C-x n w
+  - Start org file with folded or non folded options
+    ```
+    (setq org-startup-folded t)
+    Documentation:
+    Non-nil means entering Org mode will switch to OVERVIEW.
+
+    This can also be configured on a per-file basis by adding one of
+    the following lines anywhere in the buffer:
+       #+STARTUP: fold              (or ‘overview’, this is equivalent)
+       #+STARTUP: nofold            (or ‘showall’, this is equivalent)
+       #+STARTUP: content
+       #+STARTUP: showeverything
+    ```
 
 - Display tab bar in emacs
     - (global-tab-line-mode)

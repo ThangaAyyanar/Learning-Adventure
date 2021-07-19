@@ -20,7 +20,7 @@
   - [ ] Python
   - [ ] Swift
 - [ ] Finance
-  - [ ] Decide which software going to use
+  - [ ] Decide which software going to use - Beancount
   - [ ] [GPG with Hledger](https://pzel.name/2016/07/18/Encrypted-hledger-with-emacs-and-gnupg.html)
     - [ ] hledger mode - For finance
 - [ ] TRAMP integration (remote access the file)
@@ -56,10 +56,13 @@
   - For now it is not useful to me.
 - [x] Gnupg integration
 
+## Things i like to learn
+- [ ] org attach
+
 ## Current Bugs i am facing
 - [ ] After projectile switch, Fuzzy search is slow.
     - this blog has one solution https://www.murilopereira.com/how-to-open-a-file-in-emacs/
-- [ ] SourceKit integration with iOS Library completion missing.
+- [ ] SourceKit integration with iOS Library completion missing. (which can be solved)
 
 ## Things i learned
 
@@ -96,6 +99,12 @@
 
 - Diff
   - ediff program can be used to diff buffer, files.
+
+- indent region
+    - indent-region interactive function in M-x
+
+## Emacs functions
+- **emacs-lisp-macroexpand** to expand the lisp macro.
 
 ## Youtube
 - [System Crafters](https://www.youtube.com/c/SystemCrafters/playlists)

@@ -44,8 +44,8 @@
 - [x] Auto Package update
 - [x] Cheat.sh
 - [x] Dash integration (Done using counsel-dash)
-- [ ] Org Mode
-    - [ ] Book tracking in emacs
+- [x] Org Mode
+    - [x] Book tracking in emacs (Created a demo, woking on make it better)
     - [x] Use Effective org agenda. (I kindof understand how it works)
     - [x] Journaling. (Using structured template logic learned from SystemCrafters Video)
     - [x] Org Roam.
@@ -87,6 +87,16 @@
        #+STARTUP: content
        #+STARTUP: showeverything
     ```
+
+- Set pomodoro timer in org (Resouce: SystemCrafters Shorts)
+```
+M-x org-timer-set-timer (to create)
+M-x org-timer-pause-or-continue (to pause/resume)
+M-x org-timer-stop (to stop the timer)
+
+to set sound after the timer is done
+(setq org-clock-sound "~/Downloads/something.wav")
+```
 
 - Display tab bar in emacs
     - (global-tab-line-mode)

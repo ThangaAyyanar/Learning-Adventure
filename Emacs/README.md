@@ -24,7 +24,7 @@
   - [ ] [GPG with Hledger](https://pzel.name/2016/07/18/Encrypted-hledger-with-emacs-and-gnupg.html)
     - [ ] hledger mode - For finance
 - [ ] TRAMP integration (remote access the file)
-- [ ] Use chemacs2 for emacs configuration.
+- [x] Use chemacs2 for emacs configuration.
 - [ ] Applications
   - [ ] [Email client](https://macowners.club/posts/email-emacs-mu4e-macos/)
   - [ ] Explore elfeed

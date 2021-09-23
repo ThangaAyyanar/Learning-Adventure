@@ -14,7 +14,7 @@
   - [ ] Elisp
   - [ ] Python
   - [ ] Swift
-- [ ] Ctags based navigation
+- [ ] Tags based navigation (Any tags Ctags, Etags)
 - [ ] Easy to test software (use projectile test feature)
   - [ ] Elisp
   - [ ] Python
@@ -35,7 +35,9 @@
   - [x] PDF book read
     - Currently it is possible with doc mode but it is slow
     - May be give pdf-tools a try
-- [x] Yas snippet
+- [-] Yas snippet
+    - [x] Install
+    - [ ] create one or two snippets
 - [x] Markdown integration
 - [x] Rest client integration (Emacs package verb)
 - [x] PlantUML integration and Graphviz

@@ -20,3 +20,8 @@ refer: https://www.masteringemacs.org/article/mastering-key-bindings-emacs
 - Used to show only the necessary content in the screen, same is available for org file too.
 - `markdown-narrow-*` functions in M-x can narrow down the view.
 - `widen` remove the restriction
+
+### Vterm and multi vterm as Termux alternative
+- `multi-vterm` to spawn a terminal
+- `multi-vterm-rename-buffer` to rename terminal buffer name
+- I use it along with `tab` mode.

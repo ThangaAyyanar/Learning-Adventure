@@ -25,3 +25,16 @@ refer: https://www.masteringemacs.org/article/mastering-key-bindings-emacs
 - `multi-vterm` to spawn a terminal
 - `multi-vterm-rename-buffer` to rename terminal buffer name
 - I use it along with `tab` mode.
+
+## Day 3
+### Daily diary - one simple function
+- Don't know where i found it but i like it.
+```
+(defun log-diary()
+  (interactive)
+  (setq filename (concat "~/Documents/Diary/" (format-time-string "%Y-%m-%d") ".md"))
+  (find-file filename)
+  (insert (concat "# " (format-time-string "%H:%M") "\n\n"))
+  (previous-line))
+
+```

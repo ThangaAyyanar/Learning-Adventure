@@ -38,3 +38,10 @@ refer: https://www.masteringemacs.org/article/mastering-key-bindings-emacs
   (previous-line))
 
 ```
+
+## Day 4
+### Magit status - change key
+- Change `gt` mapping to tab-bar instead of magit function
+```
+(evil-define-key 'normal magit-status-mode-map (kbd "gt") 'tab-bar-switch-to-next-tab)
+```

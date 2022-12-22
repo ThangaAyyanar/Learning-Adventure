@@ -41,7 +41,66 @@ refer: https://www.masteringemacs.org/article/mastering-key-bindings-emacs
 
 ## Day 4
 ### Magit status - change key
-- Change `gt` mapping to tab-bar instead of magit function
+- ~Change `gt` mapping to tab-bar instead of magit function~
+- This doesn't worked after i restarted the emacs :(
 ```
 (evil-define-key 'normal magit-status-mode-map (kbd "gt") 'tab-bar-switch-to-next-tab)
 ```
+
+## Day 5
+### Vertico-delete-buffer function
+```
+(defun vertico-delete-buffer ()
+  "Kill buffer in the vertico"
+  (interactive)
+  ;;(message (and vertico--input (vertico--candidate 'highlight)))
+  (kill-buffer (and vertico--input (vertico--candidate 'highlight))))
+
+(with-eval-after-load 'evil
+  (define-key vertico-map (kbd "C-d") 'vertico-delete-buffer)
+  (define-key vertico-map (kbd "M-h") 'vertico-directory-up))
+```
+- Hacky way to delete buffer when `c-d` is pressed in `c-x b`
+- Getting the hovered content from vertico logic is taken from `consult-vertico--candidate`
+- Problems
+  - Doesn't work in consult buffer (I don't why)
+  - Vertico is updated after the buffer is deleted
+
+### Embark
+- Tried embark it works inside the buffer
+- Not working in minibuffer, I don't know 
+  - I `toggle-debug-on-error` in M-x and ran the embark act on mini buffer, found the following error   
+```
+Debugger entered--Lisp error: (void-function vertico--update)
+  vertico--update()
+  embark--vertico-selected()
+  #f(compiled-function (fun) #<bytecode -0x4e7c2ce8f1f2874>)(embark--vertico-selected)
+  run-hook-wrapped(#f(compiled-function (fun) #<bytecode -0x4e7c2ce8f1f2874>) embark--vertico-selected)
+  embark--targets()
+  embark-act(nil)
+  funcall-interactively(embark-act nil)
+  call-interactively(embark-act nil nil)
+  command-execute(embark-act)
+  read-from-minibuffer("Find file: " "~/" (keymap (keymap (32)) keymap (10 . minibuffer-complete-and-exit) (13 . minibuffer-complete-and-exit) keymap (menu-bar keymap (minibuf "Minibuf" keymap (tab menu-item "Complete" minibuffer-complete :help "Complete as far as possible") (space menu-item "Complete Word" minibuffer-complete-word :help "Complete at most one word") (63 menu-item "List Completions" minibuffer-completion-help :help "Display all possible completions") "Minibuf")) (27 keymap (103 keymap (27 keymap (99 . switch-to-completions))) (118 . switch-to-completions)) (prior . switch-to-completions) (63 . minibuffer-completion-help) (32 . minibuffer-complete-word) (9 . minibuffer-complete) keymap (18 . consult-history) (menu-bar keymap (minibuf "Minibuf" keymap (previous menu-item "Previous History Item" previous-history-element :help "Put previous minibuffer history element in the min...") (next menu-item "Next History Item" next-history-element :help "Put next minibuffer history element in the minibuf...") (isearch-backward menu-item "Isearch History Backward" isearch-backward :help "Incrementally search minibuffer history backward") (isearch-forward menu-item "Isearch History Forward" isearch-forward :help "Incrementally search minibuffer history forward") (return menu-item "Enter" exit-minibuffer :key-sequence "\15" :help "Terminate input and exit minibuffer") (quit menu-item "Quit" abort-recursive-edit :help "Abort input and exit minibuffer") "Minibuf")) (13 . exit-minibuffer) (10 . exit-minibuffer) (7 . abort-minibuffers) (C-tab . file-cache-minibuffer-complete) (9 . self-insert-command) (XF86Back . previous-history-element) (up . previous-line-or-history-element) (prior . previous-history-element) (XF86Forward . next-history-element) (down . next-line-or-history-element) (next . next-history-element) (27 keymap (60 . minibuffer-beginning-of-buffer) (114 . previous-matching-history-element) (115 . next-matching-history-element) (112 . previous-history-element) (110 . next-history-element))) nil file-name-history "~/" nil)
+  #f(compiled-function (prompt collection &optional predicate require-match initial-input hist def inherit-input-method) "Default method for reading from the minibuffer with completion.\nSee `completing-read' for the meaning of the arguments." #<bytecode 0x1295b6db419b26ae>)("Find file: " read-file-name-internal file-exists-p confirm-after-completion "~/" file-name-history "~/" nil)
+  apply((#f(compiled-function (prompt collection &optional predicate require-match initial-input hist def inherit-input-method) "Default method for reading from the minibuffer with completion.\nSee `completing-read' for the meaning of the arguments." #<bytecode 0x1295b6db419b26ae>) "Find file: " read-file-name-internal file-exists-p confirm-after-completion "~/" file-name-history "~/" nil))
+  vertico--advice(#f(compiled-function (prompt collection &optional predicate require-match initial-input hist def inherit-input-method) "Default method for reading from the minibuffer with completion.\nSee `completing-read' for the meaning of the arguments." #<bytecode 0x1295b6db419b26ae>) "Find file: " read-file-name-internal file-exists-p confirm-after-completion "~/" file-name-history "~/" nil)
+  apply(vertico--advice #f(compiled-function (prompt collection &optional predicate require-match initial-input hist def inherit-input-method) "Default method for reading from the minibuffer with completion.\nSee `completing-read' for the meaning of the arguments." #<bytecode 0x1295b6db419b26ae>) ("Find file: " read-file-name-internal file-exists-p confirm-after-completion "~/" file-name-history "~/" nil))
+  completing-read-default("Find file: " read-file-name-internal file-exists-p confirm-after-completion "~/" file-name-history "~/" nil)
+  completing-read("Find file: " read-file-name-internal file-exists-p confirm-after-completion "~/" file-name-history "~/")
+  read-file-name-default("Find file: " nil "~/" confirm-after-completion nil nil)
+  read-file-name("Find file: " nil "~/" confirm-after-completion)
+  find-file-read-args("Find file: " confirm-after-completion)
+  byte-code("\300\301\302 \"\207" [find-file-read-args "Find file: " confirm-nonexistent-file-or-buffer] 3)
+  call-interactively(find-file nil nil)
+  command-execute(find-file)
+
+```
+
+### Consult-Keep-lines (from M-x) (consult package)
+- keep-line but interactive
+- Keep the line that matches the regex
+
+### Tabspaces
+- https://github.com/mclear-tools/tabspaces
+- Trying about tabspaces library

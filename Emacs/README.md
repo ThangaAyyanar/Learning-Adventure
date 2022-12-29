@@ -140,3 +140,14 @@ Debugger entered--Lisp error: (void-function vertico--update)
 
 ```
 - Recent file mode seems great but not this time maybe later.
+
+## Day 7 - IRC
+- https://systemcrafters.cc/chatting-with-emacs/irc-basics-with-erc/
+- M-x erc-tls
+- By default librechat is selected so no need to change server and Port too.
+- Before you join, you need to enter nick name and full name.
+- After you login, `/join #<channel_name>`
+- Get list of all channel, `/list`
+- Disconnect `/part`
+- IRC bouncer: Keep the connection to the IRC, Act as proxy between you and server which can persist the chats.
+- More on IRC bouncer https://wiki.systemcrafters.cc/community/znc-bouncer-servers/

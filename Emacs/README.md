@@ -104,3 +104,39 @@ Debugger entered--Lisp error: (void-function vertico--update)
 ### Tabspaces
 - https://github.com/mclear-tools/tabspaces
 - Trying about tabspaces library
+
+## Day 6
+- I tried pulling all the package and restart the emacs.
+- It fixed the embark issue i am facing.
+- Also check keybindings associated to embark that may cause some issue
+
+### For Package management - Straight
+- I used the following resources
+- https://systemcrafters.cc/advanced-package-management/using-straight-el/
+
+### Speed Type
+- Practice touch typing from emacs
+```
+(straight-use-package 'speed-type)
+```
+- M-x speed-type-top-100 or speed-type-top-1000
+
+### 6 Things every emacs user should consider - SystemCrafters Youtube video
+- https://systemcrafters.net/emacs-from-scratch/the-best-default-settings/
+- I didn't used all the stuff
+- I like saving history of mini-buffer (awesome)
+```
+;; Save what you enter into minibuffer prompts
+(setq history-length 30)
+(savehist-mode 1)
+```
+- Get latest file from disk if it changes -> For file and dired
+```
+;; Revert buffers when the underlying file has changed
+(global-auto-revert-mode 1)
+
+;; Revert Dired and other buffers
+(setq global-auto-revert-non-file-buffers t)
+
+```
+- Recent file mode seems great but not this time maybe later.

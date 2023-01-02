@@ -151,3 +151,63 @@ Debugger entered--Lisp error: (void-function vertico--update)
 - Disconnect `/part`
 - IRC bouncer: Keep the connection to the IRC, Act as proxy between you and server which can persist the chats.
 - More on IRC bouncer https://wiki.systemcrafters.cc/community/znc-bouncer-servers/
+
+## Day 8 - Rewrite log diary function to save file as org
+```
+(defun log-diary()
+  (interactive)
+  (setq filename (concat "~/Documents/Diary/" (format-time-string "%Y-%m-%d") ".org"))
+  (find-file filename)
+  (insert (concat "* " (format-time-string "%H:%M") "\n\n"))
+  (previous-line))
+```
+- Migrating the already present .md files to .org
+```
+for i in *.md ; do echo "$i" && pandoc -s $i -o $i.org ; done
+```
+
+## Day 9 - Org Modern package
+- Written by minad
+- Below config is copied from minad's ReadMe file.
+```
+(straight-use-package 'org-modern)
+(add-hook 'org-mode-hook #'org-modern-mode)
+(add-hook 'org-agenda-finalize-hook #'org-modern-agenda)
+
+(dolist (face '(window-divider
+                window-divider-first-pixel
+                window-divider-last-pixel))
+  (face-spec-reset-face face)
+  (set-face-foreground face (face-attribute 'default :background)))
+(set-face-background 'fringe (face-attribute 'default :background))
+
+(setq
+ ;; Edit settings
+ org-auto-align-tags nil
+ org-tags-column 0
+ org-catch-invisible-edits 'show-and-error
+ org-special-ctrl-a/e t
+ org-insert-heading-respect-content t
+
+ ;; Org styling, hide markup etc.
+ org-hide-emphasis-markers t
+ org-pretty-entities t
+ org-ellipsis "…"
+
+ ;; Agenda styling
+ org-agenda-tags-column 0
+ org-agenda-block-separator ?─
+ org-agenda-time-grid
+ '((daily today require-timed)
+   (800 1000 1200 1400 1600 1800 2000)
+   " ┄┄┄┄┄ " "┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄")
+ org-agenda-current-time-string
+ "⭠ now ─────────────────────────────────────────────────")
+
+```
+
+## Day 10 - Org agenda integration with Diary
+```
+(setq org-agenda-files '("~/Documents/Diary"))
+```
+- M x `org-agenda` and press t to see all the todo's.

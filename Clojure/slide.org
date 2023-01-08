@@ -1,0 +1,78 @@
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_INIT_OPTIONS: slideNumber:true
+#+OPTIONS: toc:nil
+
+* About Me
+- iOS Developer @ Zoho
+- Likes Open source software
+- Obessed with Terminal tools and Automation
+- Recently got interested in clojure
+* Clojure
+- Dialect of lisp
+- Functional Programming
+  - Immutable Datastructure
+** Advantage
+- Seprates **Data** and **Functionality**
+- Interactive Way to code
+- Host Language
+- Awesome community
+** Learning
+#+ATTR_REVEAL: :frag (grow grow grow fade-out none) :frag_idx (1 2 3 4 -)
+- Syntax
+- REPL Workflow
+- Avaliable functions
+- Structural Editing
+* Editor
+#+ATTR_REVEAL: :frag (highlight-red) :frag_idx (1)
+- Emacs + Cider
+- VSCode + Calva
+- Vim/NeoVim + Conjure
+- Cursive (IntelliJ)
+* Usage
+- Web Developement
+  - Small Frameworks
+- Data Analysis
+- Scripting
+- Mobile Development
+- Machine Learning
+* Hosted in
+   :PROPERTIES:
+   :reveal_background: #123456
+   :END:
+** Java
+  - Clojure
+** Javascript
+  - ClojureScript
+  - Nbb
+  - Sitefox
+  - Squint(alpha)
+** Scripting 
+  - Babashka
+** Others
+- DotNet CLR
+- React Native
+- Flutter
+- Erlang
+* Syntax
+#+BEGIN_SRC clojure
+  (FUNCTION_NAME ARGS...)
+#+END_SRC
+- We will explore basic syntax
+* REPL Workflow
+* OpenSource Dissection
+- babashka
+#+BEGIN_SRC shell
+ bb --nrepl-server 
+#+END_SRC
+- M-x cider-connect-clj and give the port
+- namaspace
+- https://github.com/ThaddeusJiang/chr
+* Final Thoughts
+** Learn more about clojure
+- Clojure docs
+- Clojurian slack
+- Zulip
+* Contact Me
+- Blog: https://goldayan.netlify.app
+- e-Mail: thangaayyanar@gmail.com
+- Mastodon: @goldayan@clj.social

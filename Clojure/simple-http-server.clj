@@ -50,11 +50,6 @@
 
 ;; Server
 
-(defn handler [request]
-  {:status 200
-   :headers {"Content-Type" "text/html"}
-   :body (contents request)})
-
 (defn get-path [uri]
     (if (= uri "/") dir-path (str dir-path uri)))
 

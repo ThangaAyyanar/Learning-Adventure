@@ -217,3 +217,4 @@ for i in *.md ; do echo "$i" && pandoc -s $i -o $i.org ; done
 ```
 (setq initial-buffer-choice "~/.config/doom/start.org")
 ```
+ref: https://www.youtube.com/watch?v=ADVCHpdmA5M

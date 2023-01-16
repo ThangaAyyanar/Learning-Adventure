@@ -211,3 +211,9 @@ for i in *.md ; do echo "$i" && pandoc -s $i -o $i.org ; done
 (setq org-agenda-files '("~/Documents/Diary"))
 ```
 - M x `org-agenda` and press t to see all the todo's.
+
+## Day 11 - Custom Dashboard 
+- Use a org file as startup page
+```
+(setq initial-buffer-choice "~/.config/doom/start.org")
+```

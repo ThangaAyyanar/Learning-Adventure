@@ -218,3 +218,7 @@ for i in *.md ; do echo "$i" && pandoc -s $i -o $i.org ; done
 (setq initial-buffer-choice "~/.config/doom/start.org")
 ```
 ref: https://www.youtube.com/watch?v=ADVCHpdmA5M
+
+## Day 12 - Learn some new functions
+`read-only-mode` - Make the current buffer read only
+`org-toggle-link-display` - Expand all the org links

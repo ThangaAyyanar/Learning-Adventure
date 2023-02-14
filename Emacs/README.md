@@ -4,7 +4,7 @@
 ### Occur Mode
 - Matched regex strings are shown in different buffer called *occur* buffer.
 
-### Prettify Json
+### Prettify 
 - Select the text you want to pretify (I use evil-mode so it is capital v for me)
 - Then M-x json-pretty-print
 - We can also pretify the current buffer, using `json-pretty-print-buffer`
@@ -222,3 +222,8 @@ ref: https://www.youtube.com/watch?v=ADVCHpdmA5M
 ## Day 12 - Learn some new functions
 `read-only-mode` - Make the current buffer read only
 `org-toggle-link-display` - Expand all the org links
+
+## Day 13 - Pretty print XML and HTML
+M+x sgml-mode
+Select the Line and do the following(I use evil-mode so it is capital v for me)
+M+x sgml-pretty-print

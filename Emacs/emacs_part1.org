@@ -55,16 +55,14 @@
 - https://www.masteringemacs.org/article/effective-editing-movement
 
 
-Drop the following in the .emacs.d/init.el file
+Drop the following code block in the .emacs.d/init.el file
+
 #+begin_src emacs-lisp
 (org-babel-load-file
  (expand-file-name
   "config.org"
   user-emacs-directory))
 #+end_src
-
-
-Drop the below lines in config.org
 
 * Basic Configuration
 ** User Interface

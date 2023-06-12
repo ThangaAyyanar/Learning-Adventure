@@ -1,0 +1,118 @@
+* Emacs Part 1
+** Movement
+*** Basics
+| KeyBinding | Description                 |
+|------------+-----------------------------|
+| C-n        | Next Line                   |
+| C-p        | Previous Line               |
+| C-f        | Forward one character       |
+| C-b        | Backward one character      |
+| C-a        | Begining of the line        |
+| C-e        | End of the line             |
+| C-/        | Undo                        |
+| C-v        | Scroll down                 |
+| M-v        | Scroll up                   |
+| C-M-v      | Scroll down in other buffer |
+| C-M-V      | Scroll up in other buffer   |
+*** Next level
+| KeyBinding   | Description          |
+|--------------+----------------------|
+| M-f          | Forward on word      |
+| M-b          | Backward on word     |
+| M-a          | Begining of sentance |
+| M-e          | Ending of sentance   |
+| C-up-arrow   | Start of paragraph   |
+| C-down_arrow | End of the paragraph |
+| M-<          | Start of the buffer  |
+| M->          | End of the buffer    |
+| M-g g *      | Go to line number    |
+| C-u *        | Universal argument   |
+| C-g          | quit                 |
+** Operations
+*** Deletion
+| KeyBinding   | Description                                     |
+|--------------+-------------------------------------------------|
+| C-d          | Delete character on right side of the cursor    |
+| Backspace    | Delete charaacter on left side of the cursor    |
+| M-d          | Delete word on right side of the cursor         |
+| C-k          | Delete all data on the right side of the cursor |
+*** Search and Replace
+| KeyBinding | Description        |
+|------------+--------------------|
+| C-s        | Search forward     |
+| C-r        | Search backward    |
+| M-%        | Search and Replace |
+*** Selection Tricks
+- Press Shift with *Movement* keys to select things easily
+*** Copy, Cut and Paste (killring)
+| KeyBinding | Description                     |
+|------------+---------------------------------|
+| C-w        | Cut the selected the text       |
+| M-w        | Copy the selected text          |
+| C-y        | Paste, latest text in kill ring |
+
+** Source
+- https://www.masteringemacs.org/article/effective-editing-movement
+
+
+Drop the following in the .emacs.d/init.el file
+#+begin_src emacs-lisp
+(org-babel-load-file
+ (expand-file-name
+  "config.org"
+  user-emacs-directory))
+#+end_src
+
+
+Drop the below lines in config.org
+
+* Basic Configuration
+** User Interface
+*** Hide menubar
+#+begin_src emacs-lisp
+(menu-bar-mode 0)
+#+end_src
+*** Hide toolbar and scrollbar
+#+begin_src emacs-lisp
+(when (display-graphic-p)
+  (tool-bar-mode 0)
+  (scroll-bar-mode 0))
+#+end_src
+*** No inhibit startup message
+#+begin_src emacs-lisp
+(setq inhibit-startup-screen t)
+#+end_src
+*** Set number
+#+begin_src emacs-lisp
+(column-number-mode)
+(global-display-line-numbers-mode t)
+#+end_src
+*** Theme
+#+begin_src emacs-lisp
+(load-theme 'wombat)
+#+end_src
+*** Font configuration
+#+begin_src emacs-lisp
+(set-face-attribute 'default nil :font "JetBrainsMono Nerd Font" :height 150)
+#+end_src
+** Behavior
+*** No (backup, Lock, autosave)
+#+begin_src emacs-lisp
+;; No autoback up and lock files
+(setq
+ make-backup-files nil
+ auto-save-default nil
+ create-lockfiles nil)
+#+end_src
+*** Y or N instead of Yes or No
+#+begin_src emacs-lisp
+(fset 'yes-or-no-p 'y-or-n-p)
+#+end_src
+** Custom
+*** Tell me how much time it takes to load configuration
+#+begin_src emacs-lisp
+(add-hook 'emacs-startup-hook
+          (lambda ()
+            (message "Emacs loaded in %s."
+                     (emacs-init-time))))
+#+end_src
